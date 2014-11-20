@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fun Facts</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_submit">Submit a fact</string>
+    <string name="action_about">About me</string>
+    <string name="action_contact">Contact me</string>
+    <string name="action_facts">Back to facts</string>
+    <string name="action_favorites">My favorites</string>
+    <string name="title_activity_contact_me">Contact Me</string>
+    <string name="title_activity_about_me">About Me</string>
+    <string name="title_activity_submit_fact">Submit A Fact</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_me_title">About Me</string>
+    <string name="about_me_main">My name is Michael Lewis, I was born in London, England,
+        and have been writing apps for just a few months now. As my skills develop,
+        so will the apps I write. In the meantime, I hope you can help, both with my development and
+        with the development of these applications. Finally, I would like to dedicate this application
+        to my brother, without whom, none of this would have happened. \nAll the best, \nMike</string>
+    <string name="contact_me_title">Contact me</string>
+    <string name="contact_me_main">For the time being, feel free to contact me via email, at:
+        \nMikeanywhere@me.com \n I will shortly be implementing a direct contact form.</string>
+    <string name="submit_fact_main">Ever find it frustrating explaining veganism to your non-vegan friends? \n
+        Help the community by submitting your favorite vegan facts here! \nIf your fact is selected to go in the
+        app, you will receive the ad-free version for FREE!!! \nLet\'s make the world a greener, leaner place :).</string>
+    <string name="email_hint">Enter your email (Optional, Never Spam)</string>
+    <string name="fact_hint">Enter your fact here!</string>
+    <string name="alert_thanks_title">Thanks!</string>
+    <string name="alert_thanks_main">Thank you! your fact has been submitted! Once/If approved,
+        I\'ll send you an email to confirm your ad-free status!</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="alert_submit_empty_title">Oops!</string>
+    <string name="alert_submit_empty_main">Please submit a fact!</string>
+    <string name="toggle_favorite_button_off_hint">Favorite?</string>
+    <string name="toggle_favorite_button_on_hint">Favorite!!!</string>
+    <string name="title_activity_favorite_facts">Favorite Facts</string>
+    <string name="preference_file_key">preference_file_key</string>
+
+    <array name="list_base_facts">
+        <item>vFact1</item>
+        <item>vFact2</item>
+        <item>vFact3</item>
+    </array>
+
+
+</resources>
