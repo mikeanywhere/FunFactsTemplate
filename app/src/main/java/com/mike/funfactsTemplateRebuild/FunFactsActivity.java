@@ -20,7 +20,6 @@ import static com.mike.funfactsTemplateRebuild.R.layout.activity_fun_facts;
 
 public class FunFactsActivity extends Activity {
 
-    protected FactBook mFactBook = new FactBook();
     protected ColorWheel mColorWheel = new ColorWheel();
     protected RelativeLayout mRelativeLayout;
     protected int mTapCount;
@@ -53,9 +52,9 @@ public class FunFactsActivity extends Activity {
             @Override
             public void onClick(View view) {
                 String fFact = FACT_LABEL.getText().toString();
-                mFactBook.addToFavorites(FunFactsActivity.this, fFact);
-                mFactBook.removeFact(fFact);
-                //do something wrong
+                FactBook.addToFavorites(FunFactsActivity.this, fFact);
+                FactBook.removeFact(fFact);
+
             }
         });
 
@@ -71,11 +70,11 @@ public class FunFactsActivity extends Activity {
                     SHOW_FACT_BUTTON.setTextColor(color);
                     mTapCount++;
                     if(getFactsFromBase) {
-                        String fact = mFactBook.getBaseRandomFact();
+                        String fact = FactBook.getBaseRandomFact();
                         FACT_LABEL.setText(fact);
                     }else{
                         //TODO: change this to get saved facts from pref file if the boolean is set false onStart()
-                        String fact = mFactBook.getBaseRandomFact();
+                        String fact = FactBook.getBaseRandomFact();
                         FACT_LABEL.setText(fact);
                     }
                     if (mFavoritesToggleButton.isChecked()) {
@@ -95,9 +94,7 @@ public class FunFactsActivity extends Activity {
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
         if (id == com.mike.funfactsTemplateRebuild.R.id.action_submit) {
             Intent intent = new Intent(FunFactsActivity.this, SubmitFact.class);

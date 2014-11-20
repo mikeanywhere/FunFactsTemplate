@@ -30,10 +30,6 @@ public class FavoriteFacts extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.mike.funfactsTemplateRebuild.R.layout.activity_favorite_facts);
 
-
-        if(MobileCore.isStickeeReady()) {
-            MobileCore.showStickee(FavoriteFacts.this);
-        }
         sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         favoritesAsString = sharedPreferences.getString(FAVORITE_KEY, DEF_VAL);
         factArray = favoritesAsString.split(DELIMITER);

@@ -40,7 +40,7 @@ public class FactBook extends Activity {
         return factArray;
     }
 
-    protected String getBaseRandomFact() {
+    protected static String getBaseRandomFact() {
         String fact = "";
         Random randomGenerator = new Random();
         int randomNumber = randomGenerator.nextInt(aFacts.size());
@@ -52,7 +52,7 @@ public class FactBook extends Activity {
         aFacts.remove(fact);
     }
 
-    protected void addToFavorites(Context context,String fact) {
+    protected static void addToFavorites(Context context,String fact) {
         favorites.add(fact);
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < favorites.size(); i++){
@@ -60,7 +60,7 @@ public class FactBook extends Activity {
         }
         String finalString = stringBuilder.toString();
         SharedPreferences sharedPreferences = context.getSharedPreferences(PREFS_NAME,0);
-        editableSharedPreferences = sharedPreferences.edit();
+        SharedPreferences.Editor editableSharedPreferences = sharedPreferences.edit();
         editableSharedPreferences.clear()
                 .putString(FAVORITE_KEY, finalString)
                 .apply();
