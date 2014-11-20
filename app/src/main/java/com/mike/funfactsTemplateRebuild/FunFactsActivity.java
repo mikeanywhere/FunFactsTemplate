@@ -55,6 +55,7 @@ public class FunFactsActivity extends Activity {
                 String fFact = FACT_LABEL.getText().toString();
                 mFactBook.addToFavorites(FunFactsActivity.this, fFact);
                 mFactBook.removeFact(fFact);
+                //do something wrong
             }
         });
 
