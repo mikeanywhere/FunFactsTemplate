@@ -37,7 +37,7 @@
     <string name="title_activity_favorite_facts">Favorite Facts</string>
     <string name="preference_file_key">preference_file_key</string>
 
-    <array name="list_base_facts">
+    <array name="list_base_facts_from_resource_file">
         <item>vFact1</item>
         <item>vFact2</item>
         <item>vFact3</item>

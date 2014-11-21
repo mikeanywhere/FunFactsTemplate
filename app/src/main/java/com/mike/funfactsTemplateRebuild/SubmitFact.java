@@ -18,14 +18,12 @@ import com.parse.SaveCallback;
 
 public class SubmitFact extends Activity {
 
-    //TODO set modifiers for these:
-    ParseObject fact;
-    String userFact;
-    String userEmail;
+    protected ParseObject fact;
+    protected String userFact;
+    protected String userEmail;
     protected static EditText eTFact;
-    EditText eTEmail;
-    Button submitButton;
-
+    protected EditText eTEmail;
+    protected Button submitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +47,6 @@ public class SubmitFact extends Activity {
                     AlertDialog alert = builder.create();
                     alert.show();
                 }else {
-
                     fact = new ParseObject("Fact");
                     fact.put("fact", userFact);
                     fact.put("email", userEmail);

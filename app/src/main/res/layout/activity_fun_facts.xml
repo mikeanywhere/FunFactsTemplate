@@ -44,9 +44,16 @@
         android:id="@+id/toggleButton"
         android:textOff="@string/toggle_favorite_button_off_hint"
         android:textOn="@string/toggle_favorite_button_on_hint"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/shareButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        />
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share this!"
+        android:id="@+id/shareButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

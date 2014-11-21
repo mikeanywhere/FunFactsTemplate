@@ -3,6 +3,8 @@ package com.mike.funfactsTemplateRebuild;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,13 +13,14 @@ import java.util.Random;
 public class FactBook extends Activity {
 
     protected final static String FACT_KEY = "Facts";
-    protected final static String DEF_VAL = "something appears to have gone wrong";
+    protected final static String DEF_VAL = "You don't have any favorites yet!";
     protected final static String DELIMITER = ";;DELIMITER;;";
     protected final static String FAVORITE_KEY = "Favorites";
     protected final static String PREFS_NAME = "MyPreferencesFile";
+    protected static int factNumber = 0;
 
     protected static List<String> favorites = new ArrayList<String>();
-    protected static List<String> facts = new ArrayList<String>(Arrays.asList("aFact1", "aFact 2", "aFact 3"));
+    protected static List<String> facts = new ArrayList<String>(Arrays.asList("aFact1", "aFact2", "aFact3"));
 
     protected static String getRandomFact(Context context, boolean getFromBase){
         if(!getFromBase){
@@ -26,6 +29,14 @@ public class FactBook extends Activity {
             String[] listStringArray = listString.split(DELIMITER);
             facts = Arrays.asList(listStringArray);
             String fact = "";
+            //TODO get this working in conjunction with the initial shake-up on FunFactsActivity. Somewhere down the line,
+            //TODO the preference file is being deleted.
+//            String fact = facts.get(factNumber);
+//            if(factNumber <= facts.size()){
+//                factNumber++;
+//            }else{
+//                factNumber = 0;
+//            }
             Random randomGenerator = new Random();
             int randomNumber = randomGenerator.nextInt(facts.size());
             fact = facts.get(randomNumber);
