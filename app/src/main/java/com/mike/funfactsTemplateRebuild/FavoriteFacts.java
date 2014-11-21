@@ -1,14 +1,13 @@
 package com.mike.funfactsTemplateRebuild;
 
 import android.app.ListActivity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-
-import com.ironsource.mobilcore.MobileCore;
 
 import java.util.Arrays;
 import java.util.List;
@@ -17,13 +16,12 @@ public class FavoriteFacts extends ListActivity {
 
     protected SharedPreferences sharedPreferences;
     protected List<String> list;
-    protected String[] factArray;
+    protected String[] favoriteArray;
     protected String favoritesAsString;
     protected final static String PREFS_NAME = "MyPreferencesFile";
     protected final static String FAVORITE_KEY = "Favorites";
     protected final static String DEF_VAL = "You have no favorites yet!";
     protected final static String DELIMITER = ";;delimiter;;";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,17 +30,13 @@ public class FavoriteFacts extends ListActivity {
 
         sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         favoritesAsString = sharedPreferences.getString(FAVORITE_KEY, DEF_VAL);
-        factArray = favoritesAsString.split(DELIMITER);
-        list = Arrays.asList(factArray);
+        favoriteArray = favoritesAsString.split(DELIMITER);
+        list = Arrays.asList(favoriteArray);
 
         if(list.isEmpty()) {
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(FavoriteFacts.this, android.R.layout.simple_list_item_1, FactBook.favorites);
             setListAdapter(adapter);
         }else{
-            sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-            favoritesAsString = sharedPreferences.getString(FAVORITE_KEY, DEF_VAL);
-            factArray = favoritesAsString.split(DELIMITER);
-            list = Arrays.asList(factArray);
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(FavoriteFacts.this, android.R.layout.simple_list_item_1, FactBook.savedFavorites(this));
             setListAdapter(adapter);
         }

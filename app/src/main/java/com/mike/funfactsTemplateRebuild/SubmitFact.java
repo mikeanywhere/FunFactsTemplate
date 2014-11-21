@@ -2,6 +2,7 @@ package com.mike.funfactsTemplateRebuild;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,7 +22,7 @@ public class SubmitFact extends Activity {
     ParseObject fact;
     String userFact;
     String userEmail;
-    EditText eTFact;
+    protected static EditText eTFact;
     EditText eTEmail;
     Button submitButton;
 

@@ -25,7 +25,7 @@ public class FunFactsActivity extends Activity {
     protected int mTapCount;
     protected ToggleButton mFavoritesToggleButton;
     protected FileTools mFileTools;
-    protected boolean getFactsFromBase;
+    protected static boolean getFactsFromBase;
     protected final String FACT_KEY = "Facts";
     protected final static String DEF_VAL = "something appears to have gone wrong";
     protected final static String DELIMITER = ";;DELIMITER;;";
@@ -33,12 +33,12 @@ public class FunFactsActivity extends Activity {
     protected final static String PREFS_NAME = "MyPreferencesFile";
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MobileCore.init(this, "GORDC001AID2T0TARB2WJ3TYTM0P", MobileCore.LOG_TYPE.DEBUG, MobileCore.AD_UNITS.INTERSTITIAL, MobileCore.AD_UNITS.STICKEEZ);
+        MobileCore.init(this, "GORDC001AID2T0TARB2WJ3TYTM0P", MobileCore.LOG_TYPE.DEBUG, MobileCore.AD_UNITS.INTERSTITIAL);
         setContentView(activity_fun_facts);
-
         final TextView FACT_LABEL = (TextView) findViewById(com.mike.funfactsTemplateRebuild.R.id.FactTextView);
         final Button SHOW_FACT_BUTTON = (Button) findViewById(com.mike.funfactsTemplateRebuild.R.id.ShowFactButton);
 
@@ -52,12 +52,11 @@ public class FunFactsActivity extends Activity {
             @Override
             public void onClick(View view) {
                 String fFact = FACT_LABEL.getText().toString();
-                FactBook.addToFavorites(FunFactsActivity.this, fFact);
-                FactBook.removeFact(fFact);
-
+                FactBook.addFactToFavorites(FunFactsActivity.this, fFact);
             }
         });
 
+        //Display new fact
         SHOW_FACT_BUTTON.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,14 +68,8 @@ public class FunFactsActivity extends Activity {
                     mRelativeLayout.setBackgroundColor(color);
                     SHOW_FACT_BUTTON.setTextColor(color);
                     mTapCount++;
-                    if(getFactsFromBase) {
-                        String fact = FactBook.getBaseRandomFact();
+                        String fact = FactBook.getRandomFact(FunFactsActivity.this, getFactsFromBase);
                         FACT_LABEL.setText(fact);
-                    }else{
-                        //TODO: change this to get saved facts from pref file if the boolean is set false onStart()
-                        String fact = FactBook.getBaseRandomFact();
-                        FACT_LABEL.setText(fact);
-                    }
                     if (mFavoritesToggleButton.isChecked()) {
                         mFavoritesToggleButton.setChecked(false);
                     }
@@ -110,6 +103,10 @@ public class FunFactsActivity extends Activity {
             return true;
         }else if (id == com.mike.funfactsTemplateRebuild.R.id.action_favorite) {
             Intent intent = new Intent(FunFactsActivity.this, FavoriteFacts.class);
+            SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
+            String facts = sharedPreferences.getString(FAVORITE_KEY,DEF_VAL);
+            String[] factsArray = facts.split(DELIMITER);
+            intent.putExtra("facts",factsArray);
             startActivity(intent);
             return true;
         }
@@ -119,8 +116,8 @@ public class FunFactsActivity extends Activity {
     protected void onStart(){
         super.onStart();
         SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
-        String facts = sharedPreferences.getString(FACT_KEY,DEF_VAL);
-            if (!facts.isEmpty()){
+        String facts = sharedPreferences.getString(FACT_KEY,"null");
+            if (facts.contains("null")){
                 getFactsFromBase = true;
             }else{
                 getFactsFromBase = false;
