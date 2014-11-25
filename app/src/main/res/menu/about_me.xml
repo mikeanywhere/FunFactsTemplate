@@ -5,6 +5,10 @@
         android:title="@string/action_facts"
         android:orderInCategory="100"
         android:showAsAction="never" />
+    <item android:id="@+id/action_favorite"
+        android:title="@string/action_favorites"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
     <item android:id="@+id/action_submit"
         android:title="@string/action_submit"
         android:orderInCategory="100"

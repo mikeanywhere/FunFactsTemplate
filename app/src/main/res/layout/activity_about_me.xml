@@ -9,22 +9,20 @@
 
     >
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/metwo"
-        android:layout_gravity="center|top"
-        android:background="#10000000"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="400dp" />
+
 
     <FrameLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/textView">
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/me_three"
+            android:layout_gravity="center|top"
+            android:background="#10000000"
+            android:layout_marginBottom="400dp" />
 
         <ScrollView
             android:layout_width="wrap_content"
@@ -36,10 +34,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/about_me_main"
+            android:text="@string/content_about_me"
             android:id="@+id/textView2"
             android:layout_gravity="center_horizontal|bottom"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textColor="#ffffffff" />
 
     </FrameLayout>

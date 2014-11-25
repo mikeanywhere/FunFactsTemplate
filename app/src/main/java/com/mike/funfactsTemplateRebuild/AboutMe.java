@@ -40,7 +40,7 @@ public class AboutMe extends Activity {
             startActivity(intent);
             return true;
         }else if (id == com.mike.funfactsTemplateRebuild.R.id.action_favorite) {
-            Intent intent = new Intent(AboutMe.this, FavoriteFacts.class);
+            Intent intent = new Intent(AboutMe.this, FavoriteFactsList.class);
             startActivity(intent);
             return true;
         }

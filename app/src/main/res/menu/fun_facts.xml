@@ -1,20 +1,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".FunFactsActivity" >
-    <item android:id="@+id/action_submit"
-        android:title="@string/action_submit"
+    <item android:id="@+id/action_favorite"
+        android:title="@string/action_favorites"
         android:orderInCategory="100"
         android:showAsAction="never" />
-    <item android:id="@+id/action_about"
-        android:title="@string/action_about"
+    <item android:id="@+id/action_submit"
+        android:title="@string/action_submit"
         android:orderInCategory="100"
         android:showAsAction="never" />
     <item android:id="@+id/action_contact"
         android:title="@string/action_contact"
         android:orderInCategory="100"
         android:showAsAction="never" />
-    <item android:id="@+id/action_favorite"
-        android:title="@string/action_favorites"
+    <item android:id="@+id/action_about"
+        android:title="@string/action_about"
         android:orderInCategory="100"
         android:showAsAction="never" />
 </menu>

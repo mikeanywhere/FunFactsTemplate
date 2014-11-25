@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mike.funfactsTemplateRebuild.SubmitFact">
+    tools:context="com.mike.funfactsTemplateRebuild.SubmitFact"
+    android:background="#ff5c5356">
 
     <LinearLayout
         android:orientation="vertical"
@@ -17,17 +18,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_activity_submit_fact"
-            android:id="@+id/textView"
+            android:id="@+id/detailFavFact"
             android:layout_gravity="center_horizontal"
-            android:textSize="35dp" />
+            android:textSize="40sp"
+            android:textColor="#ffffffff"
+            />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit_fact_main"
-            android:id="@+id/textView4"
-            android:gravity="center_horizontal"
-            android:textSize="20dp" />
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/submitName"
+            android:layout_marginTop="10dp"
+            android:hint="@string/edittext_hint_name"
+            android:textColorHint="#ffaeaeae"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -36,7 +41,8 @@
             android:ems="10"
             android:id="@+id/submitEmail"
             android:layout_marginTop="10dp"
-            android:hint="@string/email_hint" />
+            android:hint="@string/edittext_hint_email"
+            android:textColorHint="#ffaeaeae" />
 
         <EditText
             android:layout_width="match_parent"
@@ -44,13 +50,25 @@
             android:inputType="textMultiLine"
             android:ems="10"
             android:id="@+id/submitFact"
-            android:hint="@string/fact_hint" />
+            android:hint="@string/edittext_hint_submitfact"
+            android:textColorHint="#ffaeaeae" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit_button_text"
+            android:text="@string/button_text_submit"
             android:id="@+id/button"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:background="#0fffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_submit_fact"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+
+            android:textColor="#ffffffff" />
     </LinearLayout>
 </RelativeLayout>

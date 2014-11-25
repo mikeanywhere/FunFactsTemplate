@@ -3,6 +3,8 @@ package com.mike.funfactsTemplateRebuild;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,78 +16,112 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 import com.ironsource.mobilcore.CallbackResponse;
 import com.ironsource.mobilcore.MobileCore;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 import static com.mike.funfactsTemplateRebuild.R.layout.activity_fun_facts;
 
 public class FunFactsActivity extends Activity {
 
-    protected ColorWheel mColorWheel = new ColorWheel();
-    protected RelativeLayout mRelativeLayout;
-    protected int mTapCount;
-    protected ToggleButton mFavoritesToggleButton;
-    protected static boolean getFactsFromBase;
-    protected final String FACT_KEY = "Facts";
-    protected final static String DEF_VAL = "You don't have any favorites yet!";
-    protected final static String DELIMITER = ";;DELIMITER;;";
-    protected final static String FAVORITE_KEY = "Favorites";
-    protected final static String PREFS_NAME = "MyPreferencesFile";
-    protected Button mShareButton;
+    private final ColorWheel mColorWheel = new ColorWheel();
+    private RelativeLayout mRelativeLayout;
+    private int mTapCount;
+    private ToggleButton mFavoritesToggleButton;
+    private final String FACT_KEY = "Facts";
+    private final static String DEF_VAL = "You don't have any favorites yet!";
+    private final static String PREFS_NAME = "MyPreferencesFile";
+    private final static String DELIMITER = ";;DELIMITER;;";
+    private boolean hasFavorited;
+    private boolean hasAlreadyRun;
 
-    //TODO Implement a way to manipulate favorites (ie remove/share/etc).
-    //TODO Reference baseFacts from Values file. (possible and done using Resources, however can't be done via static. Can we use instance? (test)
-    //TODO Stop repeating randoms (See below).
-    //TODO Ensure all context menus appear and display right.
-    //TODO Make submitted facts appear in Favorites.
-    //TODO For now, make the app portrait only.
-    //TODO Use isInterstitialReady to ensure the exitAd is compliant.
+    //TODO once this is complete, replace the TODO list with a set of TODOs for each new app (subject specific)
+//---------------------------------------------EASY--------------------------------------------------
+    //TODO Work out local and Push notifications.
+    //TODO Different string resources for different locales?
+    //---------------------------------------MEDIUM--------------------------------------------------
+    //TODO Implement a way to manipulate favorites (ie remove/share/etc)                                            ------EDIT:Half------
+    //TODO this should be implemented in the ListView of Favorites: https://github.com/daimajia/AndroidSwipeLayout
     //TODO Get colorWheel.java setting entire background images(or layouts, perhaps?) as well as colours, and set a way to choose depending on app.
     //TODO Add 'native ads' to the Favorite Facts Activity & XML.
+    //TODO Add https://github.com/amlcurran/ShowcaseView to show first time users how to use the app. add these icons:? https://www.iconfinder.com/icons/172671/contract_gesture_icon#size=358
+    //TODO ensure the exitAd is compliant. EDIT: This may already be compliant, awaiting response from mobileCore as of 21/11/2014.
+    //----------------------------------------HARD---------------------------------------------------
+
+    //----------------------------------------LONG---------------------------------------------------
+
+    //---------------------------------------UNKNOWN-------------------------------------------------
+    //TODO Streamline.
+    //TODO implement GESTURES!!! (flick facts out of the way) this dude is awesome... http://www.youtube.com/watch?v=tG3lzBDMRQQ also search for drag and drop stuff.
+    //TODO buy me a pint IAP?!?!?! https://developer.android.com/google/play/billing/index.html?hl=d
+    //TODO create branches of the template: 3rd party stores(notification ads), and paid.
+    //----------------------------------------DONE?--------------------------------------------------
+    //TODO Recode all hardcoded strings in values file. urg.                                                        ------EDIT:DONE------
+    //TODO Add optional fields 'name' and 'location' to 'submit fact' activity and to main page with if statement.  ------EDIT:DONE------
+    //TODO make contact activity parse.com style.(ie contact form)                                                  ------EDIT:DONE------
+    //TODO reduce the size of text in FavoriteDetailSwipe as some long facts are longer than the screen.            ------EDIT:DONE------
+    //TODO Reference baseFacts from Values file.                                                                    ------EDIT:DONE------
+    //TODO create a 'removeFactFromFavorites' method in FactBook.java... to be implemented for both above tasks.    ------EDIT:DONE------
+    //TODO ensure favorites can't be repeated.                                                                      ------EDIT:DONE------
+    //TODO Make submitted facts appear in Favorites & Saved Facts                                                   ------EDIT:DONE------
+    //TODO Stop repeating randoms (See below).                                                                      ------EDIT:DONE------
+    //TODO Deal with no more facts                                                                                  ------EDIT:DONE------
+    //TODO Ensure all context menus appear and display right.                                                       ------EDIT:DONE------
+    //TODO For now, make the app portrait only.                                                                     ------EDIT:DONE------
+    //TODO apparently Arrays.asList isn't changeable in size or structure, therefore we'll need to come up with something that works. This may be fixed as of 21:10 on 21/11/2014.                                                                                ------EDIT:DONE------
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MobileCore.init(this, "GORDC001AID2T0TARB2WJ3TYTM0P", MobileCore.LOG_TYPE.DEBUG, MobileCore.AD_UNITS.INTERSTITIAL);
+        MobileCore.init(this, "GORDC001AID2T0TARB2WJ3TYTM0P", MobileCore.LOG_TYPE.PRODUCTION, MobileCore.AD_UNITS.INTERSTITIAL);
         setContentView(activity_fun_facts);
         final TextView FACT_LABEL = (TextView) findViewById(com.mike.funfactsTemplateRebuild.R.id.FactTextView);
         final Button SHOW_FACT_BUTTON = (Button) findViewById(com.mike.funfactsTemplateRebuild.R.id.ShowFactButton);
 
         mRelativeLayout = (RelativeLayout) findViewById(com.mike.funfactsTemplateRebuild.R.id.rLay);
         mFavoritesToggleButton = (ToggleButton) findViewById(com.mike.funfactsTemplateRebuild.R.id.toggleButton);
-        mShareButton = (Button) findViewById(R.id.shareButton);
+        Button mShareButton = (Button) findViewById(R.id.shareButton);
         mTapCount = 0;
 
-        //TODO get this working! The idea is to shake the array up once at the beginning and then loop through with i++'s.
-        //TODO the 'Collections.Shuffle' bit below takes care of the initial shake.
-        //Initial setup. This randomizes the facts once.
-//        if (!getFactsFromBase) {
-//            SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
-//            String listString = sharedPreferences.getString(FACT_KEY,DEF_VAL);
-//            String[] listStringArray = listString.split(DELIMITER);
-//            List<String> list = Arrays.asList(listStringArray);
-//            Collections.shuffle(list);
-//            StringBuilder stringBuilder = new StringBuilder();
-//            for (int i = 0; i < list.size(); i++){
-//                stringBuilder.append(list.get(i)).append(DELIMITER);
-//            }
-//            String finalString = stringBuilder.toString();
-//            SharedPreferences.Editor editor = sharedPreferences.edit();
-//            editor.remove(FACT_KEY).putString(FACT_KEY,finalString).apply();
-//        }
+        //Set the typeFace. Typfaces are stored in the assets folder.
+        Typeface type = Typeface.createFromAsset(getAssets(), "cibreo.ttf");
+        FACT_LABEL.setTypeface(type);
+
+
+        if(!hasAlreadyRun){
+            Resources resources = getResources();
+            String[] baseFactArray = resources.getStringArray(R.array.list_base_facts_from_resource_file);
+            StringBuilder stringBuilder = new StringBuilder();
+            for (String aBaseFactArray : baseFactArray) {
+                stringBuilder.append(aBaseFactArray).append(DELIMITER);
+            }
+            String finalString = stringBuilder.toString();
+            SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
+            sharedPreferences.edit().clear().putString(FACT_KEY,finalString).apply();
+            hasAlreadyRun = true;
+        }
 
         //Display new fact
         SHOW_FACT_BUTTON.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //deal with adverts.
                 if (mTapCount % 10 == 0 && mTapCount != 0) {
                     MobileCore.showInterstitial(FunFactsActivity.this, MobileCore.AD_UNIT_SHOW_TRIGGER.BUTTON_CLICK, null);
                     mTapCount++;
+                    hasFavorited = false;
                 } else {
+                    //set up fact screen.
                     int color = mColorWheel.getColor();
                     mRelativeLayout.setBackgroundColor(color);
                     SHOW_FACT_BUTTON.setTextColor(color);
                     mTapCount++;
-                        String fact = FactBook.getRandomFact(FunFactsActivity.this, getFactsFromBase);
+                    //get and show fact
+                        String fact = FactBook.getRandomFact(FunFactsActivity.this);
                         FACT_LABEL.setText(fact);
+                    hasFavorited = false;
                     if (mFavoritesToggleButton.isChecked()) {
                         mFavoritesToggleButton.setChecked(false);
                     }
@@ -97,8 +133,17 @@ public class FunFactsActivity extends Activity {
         mFavoritesToggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fFact = FACT_LABEL.getText().toString();
-                FactBook.addFactToFavorites(FunFactsActivity.this, fFact);
+                if (!hasFavorited) {
+                    String fFact = FACT_LABEL.getText().toString();
+                    FactBook.addFactToFavorites(FunFactsActivity.this, fFact);
+                    mFavoritesToggleButton.setChecked(true);
+                    hasFavorited = true;
+                }else{
+                    String fFact = FACT_LABEL.getText().toString();
+                    FactBook.removeFavoriteFromFavorites(FunFactsActivity.this,fFact);
+                    mFavoritesToggleButton.setChecked(false);
+                    hasFavorited = false;
+                }
             }
         });
 
@@ -110,7 +155,7 @@ public class FunFactsActivity extends Activity {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(android.content.Intent.EXTRA_TEXT, fact);
-                startActivity(intent);
+                startActivity(Intent.createChooser(intent, "How would you like to send?"));
             }
         });
     }
@@ -120,7 +165,6 @@ public class FunFactsActivity extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(com.mike.funfactsTemplateRebuild.R.menu.fun_facts, menu);
         return true;
-
     }
 
     @Override
@@ -140,7 +184,7 @@ public class FunFactsActivity extends Activity {
             startActivity(intent);
             return true;
         }else if (id == com.mike.funfactsTemplateRebuild.R.id.action_favorite) {
-            Intent intent = new Intent(FunFactsActivity.this, FavoriteFacts.class);
+            Intent intent = new Intent(FunFactsActivity.this, FavoriteFactsList.class);
             startActivity(intent);
             return true;
         }
@@ -151,12 +195,31 @@ public class FunFactsActivity extends Activity {
     protected void onStart(){
         super.onStart();
         SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME,MODE_PRIVATE);
-        String facts = sharedPreferences.getString(FACT_KEY,DEF_VAL);
-            if (facts.contains(DEF_VAL)){
+        String listString = sharedPreferences.getString(FACT_KEY,DEF_VAL);
+        boolean getFactsFromBase;
+        if (listString.contains(DEF_VAL)){
                 getFactsFromBase = true;
             }else{
                 getFactsFromBase = false;
             }
+                if (!getFactsFromBase) {
+            String[] listStringArray = listString.split(DELIMITER);
+                    List<String> listList = new ArrayList<String>(Arrays.asList(listStringArray));
+            Collections.shuffle(listList);
+            StringBuilder stringBuilder = new StringBuilder();
+                    for (String aListList : listList) {
+                        stringBuilder.append(aListList).append(DELIMITER);
+                    }
+            String finalString = stringBuilder.toString();
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.remove(FACT_KEY).putString(FACT_KEY,finalString).apply();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    MobileCore.refreshOffers();
     }
 
     @Override

@@ -8,40 +8,379 @@
     <string name="action_contact">Contact me</string>
     <string name="action_facts">Back to facts</string>
     <string name="action_favorites">My favorites</string>
+    <string name="action_settings">Settings</string>
     <string name="title_activity_contact_me">Contact Me</string>
     <string name="title_activity_about_me">About Me</string>
     <string name="title_activity_submit_fact">Submit A Fact</string>
-    <string name="action_settings">Settings</string>
-    <string name="about_me_title">About Me</string>
-    <string name="about_me_main">My name is Michael Lewis, I was born in London, England,
+    <string name="title_activity_favorite_facts">Favorite Facts</string>
+    <string name="title_activity_favorite_fact_detail">FavoriteFactDetail</string>
+    <string name="title_contact_me">Contact me</string>
+    <string name="content_about_me">My name is Michael Lewis, I was born in London, England,
         and have been writing apps for just a few months now. As my skills develop,
         so will the apps I write. In the meantime, I hope you can help, both with my development and
         with the development of these applications. Finally, I would like to dedicate this application
         to my brother, without whom, none of this would have happened. \nAll the best, \nMike</string>
-    <string name="contact_me_title">Contact me</string>
-    <string name="contact_me_main">For the time being, feel free to contact me via email, at:
-        \nMikeanywhere@me.com \n I will shortly be implementing a direct contact form.</string>
-    <string name="submit_fact_main">Ever find it frustrating explaining veganism to your non-vegan friends? \n
-        Help the community by submitting your favorite vegan facts here! \nIf your fact is selected to go in the
-        app, you will receive the ad-free version for FREE!!! \nLet\'s make the world a greener, leaner place :).</string>
-    <string name="email_hint">Enter your email (Optional, Never Spam)</string>
-    <string name="fact_hint">Enter your fact here!</string>
-    <string name="alert_thanks_title">Thanks!</string>
-    <string name="alert_thanks_main">Thank you! your fact has been submitted! Once/If approved,
+    <string name="content_contact_me">Hi!\nGlad you\'re getting in touch! As a pretty fresh developer I\'m always looking for feedback from my users. I\'m not a big company with a huge research budget, so any comments you have are welcome. Feel free to send me an email by clicking on the envelope below.\n\nAll the best,\n\nMike.</string>
+    <string name="content_submit_fact">Be a part of something big. Submit your facts here. I will always credit any submissions within the app, meaning your name (or nickname) will be seen and appreciated by THOUSANDS. As an added bonus, If your fact is selected to go in the
+        app, you will receive the ad-free version for FREE!!! \nLet\'s make the world a more interesting, informed place :).</string>
+    <string name="edittext_hint_email">Enter your email (Optional)</string>
+    <string name="edittext_hint_name">Enter your name (Optional)</string>
+    <string name="edittext_hint_submitfact">Enter your fact here!</string>
+    <string name="toggle_text_favorite_off">Favorite?</string>
+    <string name="toggle_text_favorite_on">Favorited!!!</string>
+    <string name="alert_title_thanks">Thanks!</string>
+    <string name="alert_title_oops">Oops!</string>
+    <string name="alert_error_content_submit_empty_">Please submit a fact!</string>
+    <string name="alert_content_submit_thanks">Thank you! your fact has been submitted! Once/If approved,
         I\'ll send you an email to confirm your ad-free status!</string>
-    <string name="submit_button_text">Submit</string>
-    <string name="alert_submit_empty_title">Oops!</string>
-    <string name="alert_submit_empty_main">Please submit a fact!</string>
-    <string name="toggle_favorite_button_off_hint">Favorite?</string>
-    <string name="toggle_favorite_button_on_hint">Favorite!!!</string>
-    <string name="title_activity_favorite_facts">Favorite Facts</string>
-    <string name="preference_file_key">preference_file_key</string>
+    <string name="button_text_submit">Submit</string>
+    <string name="email_address_me">mikeanywhere@me.com</string>
+    <string name="popup_menu_item_share">Share this!</string>
+    <string name="popup_menu_item_remove_favorite">Remove from favorites</string>
+    <string name="button_share">Share this!</string>
+    <string name="button_next_fact">Next Fun Fact</string>
+    <string name="title_main_did_you_know">Did you know?</string>
+    <string name="text_main_fact_primer">Tap the button to begin!</string>
+    <string name="text_swipe_instruction">Swipe your finger right to remove from favorites!</string>
 
     <array name="list_base_facts_from_resource_file">
+        <item>Assuming Rudolph is in front, the number of possible way to arrange Santa\’s other eight reindeer is 40,320. </item>
+        <item>Divide your weight by six to get the approximate number of quarts of blood in your body. </item>
+        <item>A rat can go without water longer than a camel can. </item>
+        <item>The Monongahela River\’s name translated into English means "high banks breaking off and falling down in places." </item>
+        <item>The most common name in the world is Mohammed. </item>
+        <item>Hummingbirds are the only animal that can fly backwards. </item>
+        <item>During his life time, the average male eats 50 tons of food. </item>
+        <item>Hydroxydesoxycorticosterone and hydroxydeoxycorticosterones are the largest anagrams. </item>
+        <item>The average person falls asleep in seven minutes. </item>
+        <item>Canada is an Indian word meaning "Big Village." </item>
+        <item>It was discovered on a space mission that a frog can throw up. The frog throws up its stomach first, so the stomach is dangling out of its mouth. Then the frog uses its forearms to dig out all of the stomach\’s contents and then swallows the stomach back down again. </item>
+        <item>The human body contains enough fat to make seven bars of soap and enough iron to make a single one inch nail. </item>
+        <item>Most heart attacks occur between 6:00 a.m. and noon when blood pressure naturally rises. </item>
+        <item>Twenty-six astronauts have reported seeing UFOs while in orbit around the Earth. </item>
+        <item>Fingernails grow four times faster than toenails--about two hundredths of an inch per week.</item>
+        <item>Dr. Samuel A. Mudd was the physician who set the leg of</item>
+        <item>Lincoln\’s assassin John Wilkes Booth...and whose shame created the expression for ignominy, "His name is Mudd.</item>
+        <item>Playing cards were issued to British pilots in WWII. If captured, they could be soaked in water and unfolded to reveal a map for escape. </item>
+        <item>Your brain uses 10 times more oxygen than the rest of your body. </item>
+        <item>Because the eyes work harder when viewing objects up close, particularly on a computer monitor, it is the proximity of the VDT screen to the eyes that causes eyestrain, not "radiation" emitted from the screen. </item>
+        <item>"I am" is the shortest complete sentence in the English language. </item>
+        <item>Most precious gems are actually colourless. Their colour comes from impurities in the stone than act as pigmenting agents. </item>
+        <item>Gordon Sumner, the rock star and actor known as Sting, got his nickname from the yellow-and-black jerseys he used to wear, which fellow musicians thought made him look like a bumble bee. </item>
+        <item>A lightning bolt heats the air around it to three times the temperature of the sun\’s surface. </item>
+        <item>For every shark that takes a bite out of a human being, humans kill about a million sharks. </item>
+        <item>Ben and Jerry\’s send the waste from making ice cream to local pig farmers to use as feed. Pigs love the stuff, except for one flavour: Mint Oreo. </item>
+        <item>They live an average of 77 years and have the longest lifespan in the United States - nuns. </item>
+        <item>Wilma Flintstone\’s maiden name was Wilma Slaghoopal, and Betty Rubble\’s Maiden name was Betty Jean Mcbricker. </item>
+        <item>A giant squid\’s eye is the largest of any animals, exceeding 15 inches in diameter. </item>
+        <item>The shoestring was invented in England in 1790. Prior to this time, all shoes were fastened with buckles. </item>
+        <item>The state of Kansas once passed legislation rounding off the value of Pi from 3.14159265...to an even 3. </item>
+        <item>The average American adult has 23 decayed or filled surfaces. </item>
+        <item>The life span of a taste bud is ten days. </item>
+        <item>Gymnastics is the only sport more popular with women than with men. </item>
+        <item>In 1879 a drug was introduced to treat morphine addiction. The drug: cocaine. </item>
+        <item>The characters Bert and Ernie on Sesame Street were named after Bert the cop and Ernie the taxi driver in Frank Capra\’s "Its A Wonderful Life" </item>
+        <item>Research indicates that mosquitoes are attracted to people who have recently eaten bananas. </item>
+        <item>Mosquitoes are attracted to the colour blue.</item>
+        <item>Studies show that if a cat falls off the seventh floor of a building it has about thirty percent less chance of surviving than a cat that falls off the twentieth floor. It supposedly takes about eight floors for the cat to realize what is occurring, relax and correct itself. How they tested this I\’m afraid to ask. </item>
+        <item>If you toss a penny 10,000 times, it will not be heads 5000 times, but more like 4950. The heads picture weighs more, so it ends up on the bottom. </item>
+        <item>If your eyes are six feet above the surface of the ocean, the horizon will be about three statute miles away. </item>
+        <item>Alaska has the highest percentage of Baby Boomers; Utah the lowest. </item>
+        <item>If NASA sent birds into space they would soon die, they need gravity to swallow. </item>
+        <item>Armoured knights raised their visors to identify themselves when they rode past their king. This custom has become the modern military salute. </item>
+        <item>Every time you lick a stamp, you\’re consuming 1/10 of a calorie. </item>
+        <item>On average, an adult laughs about 15 times a day; a child laughs 400 times. </item>
+        <item>In medieval England beer was often served with breakfast. </item>
+        <item>The lens of the eye continues to grow throughout a person\’s life. </item>
+        <item>The Atlantic Ocean is saltier than the Pacific Ocean. </item>
+        <item>The telephone area code for a cruise ship in the Atlantic Ocean is 871. </item>
+        <item>There are more stars in the universe, than grains of sand on all the beaches in the world. </item>
+        <item>On the day that "The Wizard of Oz\’s" Judy Garland died, a tornado touched down in Kansas. </item>
+        <item>If a statue in the park of a person on a horse has both front legs in the air, the person died in battle; if the horse has one front leg in the air, the person died as a result of wounds received in battle; if the horse has all four legs on the ground, the person died of natural causes.</item>
+        <item>"111,111,111 x 111,111,111 = 12,345,678,987,654,321" </item>
+        <item>The glue on Israeli postage stamps is certified kosher. </item>
+        <item>The bones of a pigeon weigh less than its feathers. </item>
+        <item>At 90 degrees (F) below zero your breath will freeze in mid-air and fall to the ground. </item>
+        <item>The average person is about a quarter of an inch taller at night. </item>
+        <item>A pregnant goldfish is called a twit. </item>
+        <item>Charles Lindbergh took only four sandwiches with him on his famous transatlantic flight. </item>
+        <item>3000 cows are needed to supply the leather for a year\’s supply of NFL footballs. </item>
+        <item>If there were ever an ocean big enough, Saturn would be the only planet that could float. </item>
+        <item>Al Capone\’s business card said he was a used furniture dealer. </item>
+        <item>The Hewlett Packard computer company\’s first product was an automatic urinal flusher. </item>
+        <item>All the coal, oil, gas, and wood on Earth would only keep the Sun burning for a few days. </item>
+        <item>A group of rhinos is called a crash. </item>
+        <item>Bank robber John Dillinger played professional baseball. </item>
+        <item>At Old English weddings, guests threw shoes at the groom. </item>
+        <item>Only one person in two billion will live to be 116 or older. </item>
+        <item>The longest recorded flight of a chicken is thirteen seconds. </item>
+        <item>Your hearing is not as sharp on a full stomach. </item>
+        <item>The last United States train robbery took place in 1933. </item>
+        <item>A 1,200 pound horse eats about 15 lbs. of hay and nine pounds of grain everyday (seven times its own weight each year). </item>
+        <item>Albert Einstein didn\’t talk until he was four years old.</item>
+        <item>Einstein couldn\’t read until the age of nine. </item>
+        <item>The two lines that connect the bottom of your nose to your lip are called the philtrum. </item>
+        <item>Your stomach has to produce a new layer of mucus every two weeks otherwise it will digest itself. </item>
+        <item>1/100th of a second is called a "jiffy". </item>
+        <item>A group of kangaroos is called a mob. </item>
+        <item>The housefly hums in the middle octave, key of F. </item>
+        <item>"J", the youngest letter in the English alphabet, was not added until the 1600s. </item>
+        <item>It takes around 200,000 frowns to create a permanent brow line. </item>
+        <item>The Baby Ruth candy bar was actually named after Grover Cleveland\’s baby daughter, Ruth. </item>
+        <item>The fastest-moving land snail is the common garden snail whose top speed is 55 yards per hour or 0.0313 mph.</item>
+        <item>The most common time to sight a UFO is 11pm. </item>
+        <item>There are 31,557,600 seconds in a year. </item>
+        <item>The right lung takes in more air than the left. </item>
+        <item>On average, Americans buy 1.5 toothbrushes a year. </item>
+        <item>60% of the swimsuits sold in the U.S. never get wet. </item>
+        <item>It takes about 30 minutes for an aspirin to find a headache. </item>
+        <item>In Nepal, Mt. Everest is known as "Gauriosankar". </item>
+        <item>Los Angeles Police Department ballistics experts say that the fastest bullet is fired from a .223 calibre rifle and travels at 3,500 feet per second, more than 3 times the speed of sound. </item>
+        <item>If an octopus is hungry enough, it will eat its own arms. </item>
+        <item>The knee-high measurement of an average-sized grasshopper is about 1/2 inch. </item>
+        <item>An ostrich\’s eye is bigger than its brain. </item>
+        <item>A group of cows, twelve or more, are known as a "flink." </item>
+        <item>In a survey of 5,000 U.S. nurses, 40 percent said they would not recommend the medical facility where they worked to a relative. </item>
+        <item>The ancient Romans died their hair with bird droppings. </item>
+        <item>Only pharaohs were allowed to eat mushrooms in ancient Egypt. </item>
+        <item>What area of your body has the most bacteria? Between your toes. </item>
+        <item>Jimmy Carter was the first U.S. president to have been born in a hospital. </item>
+        <item>Ratio of inductees into the Rock and Roll Hall of Fame who are hearing impaired: 3 in 5. </item>
+        <item>The Yo-yo is believed to be the second-oldest toy in the world after dolls. The Greeks played with yo-yos as far back as 500 B.C. </item>
+        <item>You use 15 different muscles in your face to laugh. </item>
+        <item>The Sanskrit word for "war" means "desire for more cows." </item>
+        <item>A group of ravens is called a murder. </item>
+        <item>Cleo and Caesar were the early stage names of Cher and Sonny Bono. </item>
+        <item>Only about half of all spiders spin webs. </item>
+        <item>Kangaroos are lactose-intolerant. </item>
+        <item>Charles Darwin\’s cousin invented the IQ test. </item>
+        <item>Goats can\’t legally wear trousers in Massachusetts. </item>
+        <item>Niagara Falls was created by a glacier. </item>
+        <item>Abraham Lincoln hated being called "Abe". </item>
+        <item>Abe Lincoln\’s favourite sport was wrestling. </item>
+        <item>5% of Americans let their dishes pile up for a couple of days before washing them. </item>
+        <item>Clams can live as long as 150 years. </item>
+        <item>In ancient China, doctors received their fees only if their patients were kept healthy. If the patient\’s health failed, the doctor sometimes paid the patient. </item>
+        <item>It\’s illegal to ride an ugly horse down the street in Wilbur, Washington. </item>
+        <item>The skin on your eyelid is one one-thousandth of an inch deep (the thinnest); the skin on your back is one-fifth of an inch (the thickest). </item>
+        <item>According to research, you\’ll blow your nose about 250 times this year. </item>
+        <item>Cows can be identified by nose prints. </item>
+        <item>There are 2,598,960 possible hands in a five-card poker game. </item>
+        <item>A group of frogs is called an army. </item>
+        <item>101 Dalmatians and Peter Pan (Wendy) are the only two</item>
+        <item>Disney cartoon features with both parents are present and don\’t die throughout the entire movie. </item>
+        <item>An electric eel\’s charge is so potent it can knock a horse unconscious from twenty feet away. </item>
+        <item>70% of house dust consists of human skin. </item>
+        <item>Artichokes are flowers. </item>
+        <item>Elephants breathe 12 times a minute. </item>
+        <item>It\’s impossible to snore in the weightlessness of space.</item>
+        <item>Mosquitos have 47 teeth. </item>
+        <item>An ecstatically weeping woman paid $8,625 at an auction for a pair of horseshoes worn by Mr. Ed. </item>
+        <item>Mel Blanc (the voice of Bugs Bunny) was allergic to carrots. </item>
+        <item>The first tennis balls were stuffed with human hair. </item>
+        <item>The average blink of an eye lasts one-tenth of a second. </item>
+        <item>The average American uses 12 gallons of water while showering. </item>
+        <item>In the Middle Ages, you were supposed to throw eggs at the bride and groom. </item>
+        <item>In Lawrence, Kansas, it\’s against the law to carry bees around in your hat on city streets. </item>
+        <item>According to the Consumer Product Safety Commission, the number of injuries caused by plug-in air fresheners is 1,823. </item>
+        <item>"Stewardesses" is the longest word that is typed with only the left hand. </item>
+        <item>In England, the Speaker of the House is not allowed to speak. </item>
+        <item>Tomato ketchup was once sold in the U.S. as a medicine. </item>
+        <item>Snakes can get malaria. </item>
+        <item>Only 30% of humans can flare their nostrils. </item>
+        <item>Duelling is legal in Paraguay as long as both parties are registered blood donors. </item>
+        <item>Ducks can get the flu. </item>
+        <item>Siberia means "sleeping land." </item>
+        <item>In the Leaning Tower of Pisa, 6 of the tower\’s eight floors are without safety rails. More than 250 people have fallen to their deaths since 1174. </item>
+        <item>Rubber bands last longer when refrigerated. </item>
+        <item>There are 293 ways to make change for a dollar. </item>
+        <item>There are more chickens than people in the world. </item>
+        <item>The longest one-syllable word in the English language is "screeched." </item>
+        <item>On a Canadian two dollar bill, the flag flying over the Parliament Building is an American flag. </item>
+        <item>All of the clocks in the movie "Pulp Fiction" are stuck on 4:20. </item>
+        <item>No word in the English language rhymes with month, orange, silver or purple. </item>
+        <item>"Dreamt" is the only English word that ends in the letters "mt." </item>
+        <item>Maine is the only state whose name is just one syllable. </item>
+        <item>There are only four words in the English language which end in "-dous": tremendous, horrendous, stupendous, and hazardous. </item>
+        <item>Los Angeles\’s full name is "El Pueblo de Nuestra Senora la Reina de Los Angeles de Porciuncula"--and can be abbreviated to 3.63% of its size: "L.A." </item>
+        <item>A cat has 32 muscles in each ear. </item>
+        <item>The only real person to be a Pez head was Betsy Ross. </item>
+        <item>When the University of Nebraska Cornhuskers play football at home, the stadium becomes the state\’s third largest city. </item>
+        <item>A dragonfly has a life span of 24 hours. </item>
+        <item>A goldfish has a memory span of three seconds. </item>
+        <item>A dime has 118 ridges around the edge. </item>
+        <item>On an American one-dollar bill, there is an owl in the upper left-hand corner of the "1" encased in the "shield" and a spider hidden in the front upper right-hand corner. </item>
+        <item>It\’s impossible to sneeze with your eyes open. (DON\’T try this @ home!) </item>
+        <item>Mr.Rogers is an ordained minister. </item>
+        <item>A golden razor removed from King Tut\’s Tomb was still sharp enough to be used. </item>
+        <item>Abdul Kassam Ismael, Grand Vizier of Persia in the tenth century, carried his library with him wherever he went. The 117,000 volumes were carried by 400 camels trained to walk in alphabetical order. </item>
+        <item>According to the Encyclopedia Britannica, 11th Edition, from 1910-1911, the word toast was borrowed from the Old French toste, which has the Latin root of torrere, tostum, meaning to scorch or burn. </item>
+        <item>Acting was once considered evil, and actors in the first English play to be performed in America were arrested. </item>
+        <item>All of the officers in the Confederate army were given copies of Les Miserables, by Victor Hugo, to carry with them at all times. Robert E. Lee, among others, believed that the book symbolized their cause. Both revolts were defeated. </item>
+        <item>All office seekers in the Roman Empire were obliged to wear a certain white toga for a period of one year before the election. </item>
+        <item>At the turn of the last millennium, Dublin Ireland had the largest slave market in the world, run by the Vikings. </item>
+        <item>Aztec emperor Montezuma had a nephew, Cuitlahac, whose name meant plenty of excrement. </item>
+        <item>Before the 1800\’s there were no separately designed shoes for right and left feet. </item>
+        <item>Czar Paul I banished soldiers to Siberia for marching out of step. </item>
+        <item>Dog Days: Days of great heat. The Romans called the hottest weeks of summer canculares dies. Their theory was that the Dog Star (Sirius) rising with the sun, added to its heat and the dog-days (about July 3 to August 11) bore the combined heat of both. </item>
+        <item>During 18th century France, visitors to the royal palace in Versailles were allowed to stand in a roped-off section of the main dining room and watch the king and queen eat. </item>
+        <item>During the Cambrian period, about 500 million years ago, a day was only 20.6 hours long. </item>
+        <item>During the Depression, banks first used Scotch tape to mend torn currency. </item>
+        <item>During the eighteenth century, books that were considered offensive were sometimes punished by being whipped. </item>
+        <item>Everyone believed in the Middle Ages--as Aristotle had--that the heart was the seat of intelligence. </item>
+        <item>Evidence of shoemaking exists as early as 10,000 B.C. </item>
+        <item>Francis Scott Key was a young lawyer who wrote the poem \’The Star Spangled Banner\’ after being inspired by watching the Americans fight off the British attack of Baltimore during the War of 1812. The poem became the words to the national anthem. </item>
+        <item>High-wire acts have been enjoyed since the time of the ancient Greeks and Romans. Antique medals have been excavated from Greek islands depicting men ascending inclined cords and walking across ropes stretched between cliffs. The Greeks called these high-wire performers neurobates or oribates. In the Roman city of Herculaneum there is a fresco representing an aerialist high on a rope, dancing and playing a flute. Sometimes Roman tightrope walkers stretched cables between the tops of two neighbouring hills and performed comic dances and pantomimes while crossing. </item>
+        <item>If a family had 2 servants or less in the U.S. in 1900, census takers recorded it as lower middle-class. </item>
+        <item>If we had the same mortality rate as in the 1900s, more than half the people in the world today would not be alive. </item>
+        <item>If you were born in Los Alamos, New Mexico during the Manhattan project (where they made the atomic bomb), your birth place is listed as a post office box in Albuquerque. </item>
+        <item>In 1778, fashionable women of Paris never went out in blustery weather without a lightning rod attached to their hats. </item>
+        <item>In ancient Egypt, killing a cat was a crime punishable by death. </item>
+        <item>In certain parts of India and ancient China, mouse meat was considered a delicacy. </item>
+        <item>In medieval England, beer often was served with breakfast. </item>
+        <item>In the 1700\’s, you could purchase insurance against going to hell, in London, England. </item>
+        <item>In the 19th century, the British Navy attempted to dispel the superstition that Friday was an unlucky day to embark on a ship. The keel of a new ship was laid on a Friday, she was named H.M.S Friday, commanded by a Captain Friday, and finally went to sea on a Friday. Neither the ship nor her crew were ever heard of again. </item>
+        <item>In the Great Fire of London in 1666, half of London was burnt down but only six people were injured. </item>
+        <item>In the marriage ceremony of the ancient Inca Indians of Peru, the couple was considered officially wed when they took off their sandals and handed them to each other.</item>
+        <item>In Turkey, in the sixteenth and seventeenth centuries, anyone caught drinking coffee was put to death. </item>
+        <item>In Victorian times, there was an intense fear of being buried alive, so when someone died, a small hole was dug from the casket to the surface, then a string was tied around the dead persons finger which was then attached to a small but loud bell that was hung on the surface of the grave, so then if someone was buried alive, they could ring the bell and whomever was on duty would go and dig them up. Someone was on the clock 24 hours a day- hence the grave yard shift. </item>
+        <item>Income tax was first introduced in England in 1799 by British Prime Minister, William Pitt. </item>
+        <item>It cost more to buy a car today in the United States than it cost Christopher Columbus to equip and undertake three voyages to the New World. </item>
+        <item>It has been calculated that in the last 3,500 years, there have only been 230 years of peace throughout the civilized world. </item>
+        <item>January is National Soup month. </item>
+        <item>Native Americans never actually ate turkey; killing such a timid bird was thought to indicate laziness. </item>
+        <item>53,312 inmate lawsuits were filed nationwide in 1995. </item>
+        <item>A Virginia law requires all bathtubs to be kept out in the yards, not inside the house. </item>
+        <item>According to British law passed in 1845, attempting to commit suicide was a capital offense. Offenders could be hanged for trying. </item>
+        <item>Christmas was once illegal in England. </item>
+        <item>George Washington is the only man whose birthday is a legal holiday in every state of the U.S as of a few years ago.</item>
+        <item>Impotence is legal grounds for divorce in 24 American states. </item>
+        <item>In a tradition dating to the beginning of the Westminster system of government, the bench in the middle of a Westminster parliament is two and a half sword lengths long. This was so the government and opposition couldn\’t have a go at each other if it all got a bit heated </item>
+        <item>In Alaska it is illegal to shoot at a moose from the window of an aeroplane or other flying vehicle. </item>
+        <item>In Baltimore USA it is illegal to wash or scrub a sink regardless of how dirty it is. </item>
+        <item>In Cleveland, Ohio it is illegal to catch mice without a hunting license. </item>
+        <item>In England during Queen Victoria\’s reign, it was illegal to be a homosexual but not a lesbian. The reason being that when the Queen was approving the law she wouldn\’t believe that women would do that. </item>
+        <item>In Hartford, Connecticut, it is illegal for a husband to kiss his wife on Sundays. </item>
+        <item>In Italy, it is illegal to make coffins out of anything except nutshells or wood. </item>
+        <item>In Jasmine, Saskatchewan, it is illegal for a cow to moo within 300 km of a private home. </item>
+        <item>In Kentucky, it is illegal to carry ice-cream in your back pocket. </item>
+        <item>In Texas, it is illegal to put graffiti on someone else\’s cow. </item>
+        <item>In the UK, there is no act of parliament making it illegal to commit murder. Murder is only illegal due to legal precedent. </item>
+        <item>It is illegal to eat oranges while bathing in California. </item>
+        <item>It is illegal to frown at cows in Bladworth, Saskatchewan. </item>
+        <item>It is illegal to hunt camels in the state of Arizona. </item>
+        <item>It was once against the law to have a pet dog in a city in Iceland. </item>
+        <item>It was once against the law to slam your car door in a city in Switzerland. </item>
+        <item>Mailing an entire building has been illegal in the U.S. since 1916 when a man mailed a 40,000-ton brick house across Utah to avoid high freight rates. </item>
+        <item>Pennsylvania was the first colony to legalize witchcraft. </item>
+        <item>107 incorrect medical procedures will be performed by the end of the day today. </item>
+        <item>A Boeing 747\’s wingspan is longer than the Wright brother\’s first flight. </item>
+        <item>A bolt of lightning can strike the earth with a force as great as 100 million volts. </item>
+        <item>A caesium atom in an atomic clock beats 9,192,631,770 times a second. </item>
+        <item>A creep is a metallurgical term for when something that is normally very strong bends because of gravity. This happens to many metals at high temperatures, where they won\’t melt but they will creep. </item>
+        <item>A cubic mile of fog is made up of less than a gallon of water. </item>
+        <item>A device invented as a primitive steam engine by the Greek engineer Hero, about the time of the birth of Christ, is used today as a rotating lawn sprinkler. </item>
+        <item>A downburst is a downward blowing wind that sometimes comes blasting out of a thunderstorm. The damage looks like tornado damage, since the wind can be as strong as an F2 tornado, but debris is blown straight away from a point on the ground. It\’s not lifted into the air and transported downwind. </item>
+        <item>A fierce gust of wind blew 45 year old Vittorio Luise\’s car into a rover near Naples, Italy, in 1980. He managed to break a window, climb out and swim to shore--where a tree blew over and killed him. </item>
+        <item>A fully loaded supertanker traveling at normal speed takes at least twenty minutes to stop. </item>
+        <item>A full moon always rises at sunset. </item>
+        <item>A full moon is nine times brighter than a half moon. </item>
+        <item>A jumbo jet uses 4,000 gallons of fuel to take off. </item>
+        <item>A large flawless emerald is worth more than a similarly large flawless diamond. </item>
+        <item>A lightning bolt generates temperatures five times hotter than those found on the sun\’s surface. </item>
+        <item>A manned rocket reaches the moon in less time than it took a stagecoach to travel the length of England. </item>
+        <item>A normal raindrop falls at about 7 miles per hour. </item>
+        <item>A penny whistle has six finger holes. </item>
+        <item>A rainbow can only occur when the sun is 40 degrees or less above the horizon. </item>
+        <item>A silicon chip a quarter-inch square has the capacity of the original 1949 ENIAC computer, which occupied a city block. </item>
+        <item>A standard grave is 7\’8 x 3\’2 x 6. </item>
+        <item>A syzygy occurs when three astronomical bodies line up. </item>
+        <item>A two-bit moon is in its first quarter. </item>
+        <item>A wind with a speed of 74 miles or more is designated a hurricane. </item>
+        <item>About seven million cars are junked each year in the U.S. </item>
+        <item>According to the Gemmological Institute of America, up until 1896, India was the only source for diamonds to the world. </item>
+        <item>According to the Texas Department of Transportation, one person is killed annually painting stripes on the state\’s highways and roads. </item>
+        <item>All snow crystals are hexagonal. </item>
+        <item>All the gold produced in the past five hundred years, if melted, could be compressed into a 50-foot cube. </item>
+        <item>All totalled, the sunlight that strikes Earth at any given moment weighs as much as an ocean liner. </item>
+        <item>American Airlines saved $40,000 in 1987 by eliminating one olive from each salad served in first class. </item>
+        <item>An enneahedron is solid with nine faces. </item>
+        <item>An inch of snow falling evenly on one acre of ground is equivalent to about 2715 gallons of water. </item>
+        <item>Any free moving liquid in outer space will form itself into a sphere because of its surface tension. </item>
+        <item>Approximately 98% of software in China is pirated. </item>
+        <item>April is Earthquake Preparedness month. For a little added incentive, consider this- The most powerful earthquake to strike the United States occurred in 1811 in New Madrid, Missouri. The quake shook more than one million square miles, and was felt as far as 1,000 miles away. </item>
+        <item>At any given time, there are 1,800 thunderstorms in progress over the earth\’s atmosphere. </item>
+        <item>At room temperature, the average air molecule travels at the speed of a rifle bullet. </item>
+        <item>Back in the mid to late 80\’s, an IBM compatible computer wasn\’t considered a hundred percent compatible unless it could run Microsoft\’s Flight Simulator. </item>
+        <item>Bacteria, the tiniest free-living cells, are so small that a single drop of liquid contains as many as 50 million of them. </item>
+        <item>Bamboo (the world\’s tallest grass) can grow up to 90 cm in a day. </item>
+        <item>Because of the rotation of the earth, an object can be thrown farther if it is thrown west. </item>
+        <item>Carolyn Shoemaker has discovered 32 comets and approximately 300 asteroids. </item>
+        <item>Clouds fly higher during the day than the night. </item>
+        <item>Construction workers hard hats were first invented and used in the building of the Hoover Dam in 1933. </item>
+        <item>Did you know you share a birthday with at least nine other million people in the world? </item>
+        <item>During the time that the atomic bomb was being hatched by the United States at Alamogordo, New Mexico, applicants for routine jobs like janitors, were disqualified if they could read. Illiteracy was a job requirement. The reason: the authorities did not want their trash or other papers read. </item>
+        <item>Each year there is one ton of cement poured for each man, woman and child in the world. </item>
+        <item>Ethernet is a registered trademark of Xerox, Unix is a registered trademark of AT&amp;T. </item>
+        <item>Experts at Intel say that microprocessor speed will double every 18 months for at least 10 years.</item>
+        <item>February 1865 is the only month in recorded history not have a full moon. </item>
+        <item>If you attempted to count the stars in a galaxy at a rate of one every second it would take around 3,000 years to count them all. </item>
+        <item>If you yelled for 8 years, 7 months and six days, you would have produced enough sound energy to heat one cup of coffee. </item>
+        <item>In 1949, forecasting the relentless march of science, Popular Mechanics said computers in the future may weigh no more than 5 tons. </item>
+        <item>In 1961, MIT student Steve Russell, created SPACEWARS, the first interactive computer game, on a Digital PDP-1 (Programmed Data Processor-1) mainframe computer. Limited by the computer technology of the time, ASCII text characters were the \’graphics\’ and people could only play the game on a device that took up the floor space of a small house. </item>
+        <item>Iron nails cannot be used in oak because the acid in the wood corrodes them. </item>
+        <item>It takes 8.5 minutes for light to get from the sun to earth. </item>
+        <item>It takes one fifteen-to-twenty-year-old tree to produce seven hundred paper grocery bags. </item>
+        <item>It takes the insect-eating Venus Flytrap plant only half a second to shut its trap on its prey. </item>
+        <item>Methane gas can often be seen bubbling up from the bottom of ponds. It is produced by the decomposition of dead plants and animals in the mud. </item>
+        <item>The Venus\’s flytrap can eat a whole cheeseburger. </item>
+        <item>4,000 people are injured by tea pots every year. </item>
+        <item>A 60-minute cassette contains 565 feet of tape. </item>
+        <item>A coat hanger is forty-four inches long if straightened. </item>
+        <item>A dime has 118 ridges around the edge. </item>
+        <item>A good typist can strike twenty keys in a second. </item>
+        <item>A person uses more household energy shaving with a hand razor at a sink (because of the water power, the water pump and so on) than he would by using an electric razor. </item>
+        <item>A quarter has 119 grooves on its edge, a dime has one less groove. </item>
+        <item>A toothpick is the object most often choked on by Americans. </item>
+        <item>A typical double mattress contains as many as two million house dust mites. </item>
+        <item>A wedding ring is generally exempt by law from inclusion among the assets in a bankruptcy estate. That means that a wedding ring can\’t be seized by creditors, no matter how much the bankrupt person owes. </item>
+        <item>According to a market research survey done some time ago, 68% of consumers receiving junk mail actually open the envelopes. </item>
+        <item>According to one study, 24% of lawns have some sort of lawn ornament. </item>
+        <item>All hospitals in Singapore use Pampers diapers. </item>
+        <item>Aluminium is strong enough to support 90,000 pounds per square inch. </item>
+        <item>An average of 200 million credit cards are used every day in the United States. </item>
+        <item>Approximately 30 billion cakes of Ivory Soap had been manufactured by 1990. </item>
+        <item>As of 1983, an average of three billion Christmas cards were sent annually in the United States. </item>
+        <item>At the height of inflation in Germany in the early 1920s, one U.S. dollar was equal to 4 quintillion German marks. </item>
+        <item>Avery Laser Labels are named after company founder R. Stanton Avery. </item>
+        <item>Colgate faced a big obstacle marketing toothpaste in Spanish speaking countries. Colgate translates into the command "go hang yourself." </item>
+        <item>Each king in a deck of playing cards represents a great king from history. Spades - King David; Clubs - Alexander the Great; Hearts - Charlemagne; and Diamonds - Julius Caesar. </item>
+        <item>Each of the suits on a deck of cards represents the four major pillars of the economy in the middle ages: heart represented the Church, spades represented the military, clubs represented agriculture, and diamonds represented the merchant class. </item>
+        <item>Each of us generate 5 pounds of rubbish a day; most of it is paper. </item>
+        <item>Every year, over 8,800 people injure themselves with a toothpick. </item>
+        <item>Hallmark makes cards for 105 different relationships. </item>
+        <item>How valuable is the penny you found lying on the ground? If it takes just a second to pick it up a person could make $36.00 per hour just picking up pennies.</item>
+        <item>If done perfectly, any Rubik\’s cube combination can be solved in 17 turns. </item>
+        <item>If you lace your shoes from the inside to the outside, the fit will be snugger around your big toe. </item>
+        <item>In 1990, there were about 15,000 vacuum cleaner related accidents in the U.S. </item>
+        <item>In 75% of American households, women manage the money and pay the bills. </item>
+        <item>In every deck of cards, the King of Hearts is sticking his sword through his head. That\’s why he\’s often called the Suicide King. </item>
+        <item>In historic Deerfield, Massachusetts a guide was showing us fireplaces and some old cooking items. One of the items was an iron standing grid that they would slide bread slices into and place in front of the fire. This grid could turn around and the story goes that the women would push it with their toe; originating the term toe stir which eventually became toaster. </item>
+        <item>In order for a deck of cards to be mixed up enough to play with properly, it should be shuffled at least seven times.</item>
+        <item>It\’s rumoured that sucking on a copper penny will cause a breathalyser to read 0. </item>
+        <item>Ivory bar soap floating was a mistake. They had been mixing the soap formula causing excess air bubbles that made it float. Customers wrote and told how much they loved that it floated, and it has floated ever since. </item>
+        <item>John F. Kennedy\’s rocking chair was auctioned off for $442,000. </item>
+        <item>Ketchup is excellent for cleaning brass, especially tarnished or corroded brass. </item>
+        <item>Kleenex tissues were originally used as filters in gas masks. </item>
+        <item>Mosquito repellents do not repel. They hide you. The spray blocks the mosquito\’s sensors so they do not know you are there. </item>
+        <item>Murphy\’s Oil Soap is the chemical most commonly used to clean elephants. </item>
+        <item>On average, there are 333 squares of toilet paper on a roll. </item>
+        <item>The first U.S. coin to bear the words, United States of America was a penny made in 1727. It was also inscribed with the plain-spoken motto: Mind your own business.</item>
         <item>vFact1</item>
         <item>vFact2</item>
         <item>vFact3</item>
     </array>
 
+    <string name="title_activity_favorite_fact_list_swipe">FavoriteFactListSwipe</string>
 
 </resources>
