@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Datos curiosos</string>
+    <string name="hashtag">#Datos@Ack</string>
+    <string name="hashtag_append">\n\n#Datos@Ack</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_submit">Enviar un hecho</string>
+    <string name="action_about">Acerca de mí</string>
+    <string name="action_contact">Ponte en contacto conmigo</string>
+    <string name="action_facts">Volver a los hechos</string>
+    <string name="action_favorites">Mis favoritos</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="title_activity_contact_me">Póngase en contacto conmigo</string>
+    <string name="title_activity_about_me">Acerca de mí</string>
+    <string name="title_activity_submit_fact">Enviar un hecho</string>
+    <string name="title_activity_favorite_facts">Datos de favoritos</string>
+    <string name="title_activity_favorite_fact_detail">Datos de favoritos</string>
+    <string name="title_contact_me">Ponte en contacto conmigo</string>
+    <string name="content_about_me">Mi nombre es Michael Lewis, que nací en Londres, Inglaterra,
+         y han estado escribiendo aplicaciones para apenas hace unos meses. Con el desarrollo de mis habilidades,
+         así serán las aplicaciones que escribir. Mientras tanto, espero que usted puede ayudar, tanto con mi desarrollo y
+         con el desarrollo de estas aplicaciones. Por último, me gustaría dedicar esta aplicación
+         a mi hermano, sin los cuales nada de esto habría sucedido. \ nTodos los mejores, \ nMike</string>
+    <string name="content_contact_me">Hola! \nMe alegro de que está recibiendo en contacto! Como desarrollador bastante fresca yo siempre estoy buscando la retroalimentación de mis usuarios. No soy una gran empresa con un presupuesto de investigación enorme, por lo que cualquier comentario que tenga son bienvenidos. Siéntase libre de enviarme un correo electrónico haciendo clic en el sobre below.\n\nAll el mejor, \n\nMike.</string>
+    <string name="content_submit_fact">Sea parte de algo grande. Envíe sus hechos aquí. Siempre voy a acreditar cualquier presentación dentro de la aplicación, lo que significa su nombre (o apodo) serán vistos y apreciados por miles. Como bono adicional, si se selecciona el hecho de ir en la
+         aplicación, usted recibirá la versión sin publicidad GRATIS !!! Vamos a hacer el mundo un lugar más interesante, lugar informado :).</string>
+    <string name="edittext_hint_email">Ingrese su correo electrónico (opcional)</string>
+    <string name="edittext_hint_name">Introduce tu nombre (opcional)</string>
+    <string name="edittext_hint_submitfact">Escriba su hecho aquí!</string>
+    <string name="toggle_text_favorite_off">Favorito?</string>
+    <string name="toggle_text_favorite_on">Favorito!!!</string>
+    <string name="alert_title_thanks">Gracias!</string>
+    <string name="alert_title_oops">¡Huy!</string>
+    <string name="alert_error_content_submit_empty_">Por favor, envíe un hecho!</string>
+    <string name="alert_content_submit_thanks">Gracias! el hecho ha sido enviado! Una vez / Si se aprueba,
+         Te voy a enviar un correo electrónico para confirmar su estatus libre de publicidad!</string>
+    <string name="alert_error_content_submit_vulgar_">Por favor, mantenga el idioma apropiado</string>
+    <string name="alert_title_pollfish_1">BOOM!!!</string>
+    <string name="alert_content_pollfish_1">Usted clavó esta encuesta como un campeón! %1$d plus enquêtes et vous allez annonce gratuite , camarade Keep on Datos@Acking!!!</string>
+    <string name="alert_positive_pollfish_1">¡Impresionante!</string>
+    <string name="alert_title_pollfish_interim">LEGENDARIO!</string>
+    <string name="alert_content_pollfish_interim">Eres un MAESTRO respuesta!!! Respuesta más %1$d encuestas para deshacerse de los anuncios! Continuar el Datos@Acking, camarada! </string>
+    <string name="alert_positive_pollfish_interim">dulce!!!</string>
+    <string name="alert_positive_pollfish_final">deshacerse de ellos</string>
+    <string name="alert_negative_pollfish_final">manténgalos!</string>
+    <string name="alert_title_pollfish_final">POW!!!</string>
+    <string name="alert_content_pollfish_final">Usted acaba de ir anuncio libre, bella persona ! ¿Quiere deshacerse de las investigaciones, también?</string>
+    <string name="alert_positive_pollfish_pre">Dulce!!!</string>
+    <string name="alert_title_pollfish_pre">Eh, Tú!!</string>
+    <string name="alert_content_pollfish_pre">Hey tigre, contesta 5 de estas encuestas increíblemente cortos y usted puede deshacerse de los anuncios!</string>
+    <string name="button_text_submit">presentar</string>
+    <string name="email_address_me">mikeanywhere@me.com</string>
+    <string name="popup_menu_item_share">Comparte esta!</string>
+    <string name="popup_menu_item_remove_favorite">Eliminar de los favoritos</string>
+    <string name="button_share">Comparte esta!</string>
+    <string name="button_next_fact">Siguiente</string>
+    <string name="button_previous_fact">anterior</string>
+    <string name="title_main_did_you_know">Sabías?</string>
+    <string name="title_favorite_number">hechos favoritos… </string>
+    <string name="text_main_fact_primer">Pulse el botón para comenzar!</string>
+    <string name="text_main_fact_error_all_favorited">Usted ha Favorecido todos los hechos! Actualizaciones próximamente aquí… mientras tanto, por favor, agregue más a través de la opción \"enviar un hecho\' en el menú!</string>
+    <string name="button_favorites_back_to_facts">Volver a Datos principales</string>
+    <string name="text_swipe_instruction">Deslice el dedo hacia la derecha para eliminar de los favoritos!</string>
+    <string name="DEF_VAL">No tiene favoritos todavía!</string>
+
+    <string-array name="list_base_facts_from_resource_file"
+        formatted="false">
+        <item>Sabias que las ratas se multiplican tan rápidamente que en 18 meses, dos rata pueden llegar a tener 1 millón de hijos.</item>
+        <item>Sabias que los cocodrilos pueden comer una sola vez al año.</item>
+        <item>Sabias que los koalas pueden vivir toda su vida sin tomar agua.</item>
+        <item>Sabias que Las Vegas es el punto mas luminoso desde el universo.</item>
+        <item>El graznido de un pato (cuac, cuac) no hace eco y nadie sabe por qué.</item>
+        <item>Los mosquitos tienen dientes.</item>
+        <item>Sabias que el encendedor fue inventado antes que los cerillos.</item>
+        <item>Los diestros viven en promedio nueve años más que los zurdos.</item>
+        <item>American Airlines ahorró U$S 40.000 en 1987 eliminando una aceituna de cada ensalada que sirvió en primera clase.</item>
+        <item>El porcentaje del territorio de África que es salvaje: 28\%. El porcentaje del territorio de Norteamérica que es salvaje: 38\%.</item>
+        <item>Sabias que mas del 50\% de la gente del mundo nunca ha hecho o recibido una llamada telefonica.</item>
+        <item>Cada rey de las cartas representa a un gran rey de la historia: Espadas: El rey David. Tréboles: Alejandro Magno. Corazones: Carlomagno. Diamantes: Julio César.</item>
+        <item>Si en una estatua ecuestre (persona a caballo) el caballo tiene dos patas en el aire, la persona murió en combate. Si el caballo tiene una de las patas frontales en el aire, la persona murió de heridas recibidas en combate. Si el caballo tiene las cuatro patas en el suelo, la persona murió de causas naturales.</item>
+        <item>Según la ley, las carreteras interestatales en los Estados Unidos requieren que una milla de cada cinco sea recta. Estas secciones son útiles como pistas de aterrizaje en casos de emergencia y de guerra.</item>
+        <item>El nombre Jeep viene de la abreviación del ejército americano de Vehículo para Propósito General (\”General Purpose\” vehicle), o sea \”G.P.\” (pronunciado en inglés).</item>
+        <item>Es imposible estornudar con los ojos abiertos.</item>
+        <item>Sabias que las ratas y los caballos no pueden vomitar.</item>
+        <item>La cucaracha puede vivir nueve días sin su cabeza, antes de morir de hambre.</item>
+        <item>Los elefantes son los únicos animales de la creación que (afortunadamente) no pueden saltar.</item>
+        <item>Una persona común ríe aproximadamente quince veces por día (deberíamos mejorar eso).</item>
+        <item>Es posible hacer que una vaca suba escaleras pero no que las baje.</item>
+        <item>La Coca Cola originalmente era verde [¿no es que el traje de Santa Klaus (o Papá Nöel) era verde y lo transformaron a rojo por una publicidad de Coca Cola?]</item>
+        <item>Miguel de Cervantes Saavedra y William Shakespeare, que son considerados los más grandes exponentes de la literatura hispana e inglesa respectivamente, murieron ambos el 23 de abril de 1616.</item>
+        <item>Se tardaron veintidós siglos en calcular la distancia entre la Tierra y el Sol (149.400.000 Km). Lo hubiésemos sabido muchísimo antes si a alguien se le hubiese ocurrido multiplicar por 1.000.000.000 la altura de la pirámide de Keops en Giza, construida treinta siglos antes de Cristo.</item>
+        <item>Si el gobierno de EU no tuviera conocimiento de la existencia de extraterrestres, entonces por que tienen una zona llamada seccion 14? Y en su codigo de Regulaciones Federales indica que es ilegal para los ciudadanos americanos tener contacto con extraterrestres y sus naves.</item>
+        <item>La palabra \”cementerio\” proviene del griego koimetirion que significa: dormitorio.</item>
+        <item>Durante la guerra de secesión, cuando regresaban las tropas a sus cuarteles sin tener ninguna baja, ponían en una gran pizarra \”0 Killed\” (cero muertos). De ahí proviene la expresión \”O.K.\” para decir que todo está bien.</item>
+        <item>En los conventos, durante la lectura de las Sagradas Escrituras, al referirse a San José, decían siempre Pater Putatibus y por simplificar \”P.P.\”. Así nació el llamar \”Pepe\” a los José [otra interpretación es que viene del italiano Giuseppe.</item>
+        <item>En el Nuevo Testamento en el libro de San Mateo dice que \”Es más fácil que un camello pase por el ojo de una aguja a que un rico entre al Reino de los Cielos\”. El problemita es que San Jerónimo, el traductor del texto, interpretó la palabra \”Kamelos\” como camello, cuando en realidad en griego \”Kamelos\” es una soga gruesa con la que se amarran los barcos a los muelles. En definitiva el sentido de la frase es el mismo pero ¿cuál parece más coherente?</item>
+        <item>Cuando los conquistadores ingleses llegaron a Australia se asombraron al ver unos extraños animales que daban saltos increíbles. Inmediatamente llamaron a un nativo (los indígenas australianos eran extremadamente pacíficos) e intentaron preguntarles mediante señas qué era eso. Al notar que el indio siempre decía \”Kan Ghu Ru\” adoptaron el vocablo ingles \”kangaroo\” (canguro). Los lingüistas determinaron tiempo después el significado, que era muy claro: los indígenas querían decir \”No le entiendo\”.</item>
+        <item>Thomas Alva Edison temía a la oscuridad.</item>
+        <item>El nombre de la zona de México conocida como Yucatán viene de la conquista, cuando un español le preguntó a un indígena cómo llamaban ellos a ese lugar. El indio le dijo: \”yucatán\”. Lo que el español no sabía era que le estaba contestando: \”No soy de aquí\”.</item>
+        <item>El 80\% de las personas que leen este texto intentarán chuparse el codo.</item>
+        <item>Sabias que es imposible chuparse el codo</item>
+        <item>Sabias que el cada vez que estorunudas tu corazon se detiene por una milesima de segudo.</item>
+        <item>Sabias que no es cierto que la muralla china se puede ver desde el espacio.</item>
+        <item>Sabias que una cucaracha puede vivir siete dias despues de que le arranquen la cabeza.</item>
+        <item>Sabias que el 70\% de la gente que lea esto va tratar de chuparse el codo.</item>
+        <item>Sabias que no se puede estornudar con los ojos abiertos y que si te esfuerzas por hacerlo se pueden salir.</item>
+        <item>Sabias que aun no se ha descubierto por que se estornuda.</item>
+        <item>Sabias que una de cada mil personas puede doblar la lengua para atrás.</item>
+        <item>Sabias que las estrellas de mar no tienen cerebro.</item>
+        <item>Sabias que en proporción una pulga puede saltar a largo lo que un hombre saltara un campo de fútbol.</item>
+        <item>Sabias que hay registros de mujeres obesas que han vivido mas de 100 días si probar un solo bocado y que han subsistido a base de agua.</item>
+        <item>Sabias que el orgasmo de un cerdo dura 30 minutos.(guau)</item>
+        <item>Sabias que al estornudar te puedes quebrar una costilla.</item>
+        <item>Sabias que si te puedes chupar el codo te puedes chupar el pito.</item>
+        <item>Sabias que el cocodrilo no puede sacar la lengua.</item>
+        <item>Sabias que es físicamente que los cerdos volteen hacia el cielo.</item>
+        <item>El edificio del Pentágono tiene el doble de baños de los necesarios. Cuando se construyó la ley requería un baño para negros y otro para blancos.</item>
+        <item>Multiplicando 111111111 x 111111111 se obtiene 12345678987654321.</item>
+        <item>Sabias que utilizar audífonos por solo una hora, incrementa el numero de bacteria en tu oido unas 700 veces.</item>
+        <item>Sabias que el 35\% de la gente que atiende los anuncios de citas amorosas es gente casada.</item>
+        <item>Sabias que el sonido que emiten los patos (cuac), no emite eco y nade sabe por que.</item>
+        <item>Sabias que el 23\% de las fallas de fotocopiadoras del mundo entero son causadas por la gente que se sienta sobre ellas a fotocopiarse el trasero.</item>
+        <item>En la antigua Inglaterra la gente no podía tener sexo sin contar con el consentimiento del Rey (a menos que se tratara de un miembro de la familia real). Cuando la gente quería tener un hijo debían solicitar un permiso al monarca, quien les entregaba una placa que debían colgar afuera de su puerta mientras tenían relaciones. La placa decía \”Fornication Under Consent of the King\” (F.U.C.K.). Ese es el origen de tan famosa palabrita.</item>
+        <item>El 16\% de las mujeres nacen rubias, y 33\% de las mujeres son rubias. </item>
+        <item>El sol libera mas energía en un segundo que toda la energía consumida por la humanidad desde su inicio. </item>
+        <item>Napoleón Bonaparte calculo que las piedras utilizadas en la construcción de las pirámides de Egipto, serían suficientes para construir un enorme muro alrededor de Francia. </item>
+        <item>La letra \”J\”, es la única letra que no aparece en la tabla periódica. </item>
+        <item>La manera mas fácil de diferenciar un animal carnívoro de un herbívoro es por sus ojos. Los carnívoros (perros, leones) los tienen al frente de la cabeza, lo que les facilita localizar su alimento. Los herbívoros los tienen a los lados de la misma (aves, conejos), lo que les ayuda a detectar la aproximación de un posible depredador. </item>
+        <item>Una persona parpadea aproximadamente 25 mil veces por semana. </item>
+        <item>Los CDs fueron diseñados para recibir 72 minutos de música porque esa es la duración de la Novena Sinfonía de Beethoven. </item>
+        <item>Está probado que el cigarro es la mayor fuente de investigaciones y estadísticas. </item>
+        <item>Los relámpagos matan más que las erupciones volcánicas y los terremotos. </item>
+        <item>El material más resistente creado por la naturaleza es la tela de Araña. </item>
+        <item>El nombre HAL, del computador de la película \”2001, una Odisea en el Espacio\” no fue escogido por casualidad. Esta formado por las letras inmediatamente anteriores a las que forman la palabra IBM. </item>
+        <item>El horno de micro-ondas surgió cuando un investigador estudiaba las micro-ondas y noto que éstas habían derretido el chocolate que tenía en la bolsa. </item>
+        <item>Los rusos atienden el teléfono diciendo \”Estoy oyendo\” </item>
+        <item>15\% de las mujeres americanas se mandan flores a si mismas en el día de los enamorados. </item>
+        <item>Antes de la Segunda Guerra Mundial, en el directorio telefónico de New York había 22 Hitlers. Para el final de la guerra no había ninguno. </item>
+        <item>Si se erradicaran las enfermedades cardíacas, el cáncer y la diabetes, la expectativa de vida del hombre sería de 99.2 años. </item>
+        <item>La hija de Shakespeare era analfabeta. </item>
+        <item>Antes del 1800, los zapatos para el pie izquierdo y derecho eran iguales. </item>
+        <item>Einstein nunca fue un buen alumno, y ni siquiera hablaba bien a los 9 años, sus padres creían que era retrasado mental. </item>
+        <item>El océano Atlántico es más salado que el Pacífico. </item>
+        <item>El elefante es el único animal con 4 rodillas. </item>
+        <item>Una gota de petróleo es capaz de convertir 25 litros de agua potable en NO potable. </item>
+        <item>Cada año, el 98\% de los átomos del cuerpo humano son sustituidos. </item>
+        <item>Las ovejas no beben agua en movimiento. </item>
+        <item>Su cabello crece mas rápido durante la noche, y usted pierde en promedio 100 pelos por día. </item>
+        <item>Las hormigas no duermen. </item>
+        <item>Los ratones no vomitan </item>
+        <item>Las caricaturas del Pato Donald fueron vetadas en Finlandia porque éste no usaba pantalón. </item>
+        <item>Un estornudo viaja en tu boca a 965 Km/hr. </item>
+        <item>Solo existen tres animales con lengua azul: el perro Chow Chow, el lagarto lengua-azul y el oso negro. </item>
+        <item>100 tazas de café tomadas en un lapso de cuatro horas, técnicamente pueden causar la muerte. </item>
+        <item>Un kilo de papas fritas cuesta 200 veces lo que vale un kilo de patatas. </item>
+        <item>La gente rubia tiene más pelo que la gente de pelo oscuro. </item>
+        <item>En la ciudad de Los Ángeles hay más automóviles que gente. </item>
+        <item>Investigaciones dan como resultados, que los insectos son atraídos por personas que acababan de comer plátano. </item>
+        <item>Cuando Bugs Bunny apareció por primera vez en 1935, este se llamaba Happy Rabbit. </item>
+        <item>El estado norteamericano con mas parques nacionales es Alaska, con 8. </item>
+        <item>Todas las góndolas en Venecia, Italia, deben pintarse en color negro, excepto las que pertenecen a altos oficiales. </item>
+        <item>La primera película en tener una segunda parte fue King Kong, de 1933. La secuela se llamaba El hijo de Kong y salió en el mismo año </item>
+        <item>Se puede descubrir el sexo de una tortuga, sólo por el sonido que hace: El macho gruñe, la hembra sisea. </item>
+        <item>El nombre más común del mundo es Mohammed. </item>
+        <item>Napoleón Bonaparte nació solo con 26 dientes. </item>
+        <item>El número de placa de Harry El Sucio ( Dirty Harry) es 2211. </item>
+        <item>El 16 de diciembre de 1811 un terremoto hizo que las aguas del río Mississippi se corrieran en sentido contrario. </item>
+        <item>En Estados Unidos hay más flamingos de plástico que de carne y hueso. </item>
+        <item>El alimento favorito de las cucarachas es el pegamento que se utiliza en el reverso de las estampillas. </item>
+        <item>La ciudad de Estambul es la única en el mundo cuyo territorio se encuentra en dos continentes distintos a la vez: Europa y Asia. </item>
+        <item>El peso promedio de un iceberg es de 20.000.000 de toneladas. </item>
+        <item>El nombre original de Luke Skywalker era Starkiller (Asesino de estrellas), pero para que sonara menos violento se lo cambiaron. </item>
+        <item>El escudo de Colombia tiene incluido el mapa de Panamá </item>
+        <item>La velocidad de escape de la gravedad de la tierra es de 11.7 Km. por segundo </item>
+        <item>Los gatos y los perros, al igual que los humanos, pueden ser zurdos o derechos. </item>
+        <item>Los hombres utilizan un promedio de 15,000 palabras por día, las mujeres 30,000. </item>
+        <item>Los meses que empiezan en lunes siempre tendrán un Viernes 13. </item>
+        <item>Los pingüinos no vuelan … por que tienen frío. </item>
+        <item>El collar de la rana René tiene 9 picos </item>
+        <item>En Fantasía la película de Disney, el hechicero se llama Yensid. O sea Disney deletreado al revés. </item>
+        <item>La botella de Coca Cola era originalmente verde. </item>
+        <item>Es posible hacer que una vaca suba escaleras pero no que las baje.. </item>
+        <item>El alfabeto hawaiano tiene 12 letras. </item>
+        <item>American Airlines se ahorro $40,000 en 1987 eliminando una aceituna de cada ensalada que sirvió. </item>
+        <item>La ciudad con mas Rolls Royce per capita es Hong Kong. </item>
+        <item>El estado americano con el mas alto porcentaje de gente que camina es Alaska. </item>
+        <item>El porcentaje de África que es salvaje: 28\%. </item>
+        <item>El porcentaje de Norteamérica que es salvaje: 38\%. </item>
+        <item>Porcentaje de hombres norteamericanos que dicen que se casarían con la misma mujer si lo tuvieran que hacer otra vez: 80. </item>
+        <item>Porcentaje de mujeres norteamericanas que dicen que se casarían con el mismo hombre si lo tuvieran que hacer otra vez: 50\%. </item>
+        <item>Numero de personalidades que se encuentra en aviones a cualquier hora del dia: 61.000. </item>
+        <item>Costo de mantener a un perro hasta la edad de 11 años: $6.400 </item>
+        <item>Porcentaje de norteamericanos que han visitando Disneylandia o Disney World: 70\%. </item>
+        <item>Vida promedio de una pelota de béisbol en un partido profesional: 7 lanzamientos. </item>
+        <item>La gente inteligente tiene mas zinc y cobre en su cabello. </item>
+        <item>Los padres mas jóvenes tenían 8 y 9 años y vivieron en China en 1910. </item>
+        <item>Islandia consume mas Coca Cola per capita que ningún otro país en el mundo. </item>
+        <item>Elche consume mas Coca Cola per capita que ninguna otra ciudad en el mundo. </item>
+        <item>La primera novela que se escribió en una maquina de escribir: \”Tom Sawyer\”. </item>
+        <item>El graznido de un pato (cuac, cuac) no hace eco y nadie sabe porque. </item>
+        <item>Los tranvías de San Francisco son el único monumento nacional móvil de USA. </item>
+        <item>La razón por la que las escaleras en las estaciones de bomberos son circulares es por los años en los que los caballos tiraban de las máquinas estaban en el establo, en el piso inferior, y aprendían a subir las escaleras rectas. </item>
+        <item>Cada rey de las cartas representa a un gran rey de la historia. Picas: Rey David, Tréboles: Alejandro Magno. Corazones: Carlomagno, Diamantes: Julio Cesar. </item>
+        <item>111.111,111 x 111.111,111 = 12.345.678.987,654321 </item>
+        <item>En las estatuas de una persona a caballo, si el animal tiene las dos patas al aire, la persona murió en combate. </item>
+        <item>tiene una de las patas delanteras elevadas, la persona murió de heridas recibidas en combate. </item>
+        <item>Si el caballo tiene las cuatro patas en el suelo, la persona murió de causas naturales. </item>
+        <item>Los clanes de hace muchos años se deshacían de los indeseables quemándoles la casa. Por ello en ingles se le dice al despedir a una persona de su empleo \”you\”re fired\”. </item>
+        <item>El ojo del avestruz es mas grande que su cerebro. </item>
+        <item>El vuelo mas largo registrado de un pollo duro 13 segundos. </item>
+        <item>Según la ley, las carreteras interestatales en Estados Unidos requieren que una milla de cada cinco sea recta. Estas secciones son útiles como pistas de aterrizaje en casos de emergencia y de guerra. </item>
+        <item>El nombre \”jeep\” viene de la abreviación que le dio el ejercito americano a \”General Purpose vehicle\”, G. P. Al pronunciar estas dos letras seguidas en ingles, suena \”jeep\”. </item>
+        <item>El Pentágono tiene el doble de baños de los necesarios. Cuando se construyo, la ley requería de un baño para negros y otro para </item>
+        <item>blancos. </item>
+        <item>Solo una persona entre 2.000 millones vive 116 años o mas. </item>
+        <item>El nombre Wendy se inventó en el libro \”Peter Pan.\”. </item>
+        <item>El corazón humano genera suficiente presión cuando bombea la sangre que podría esparcirla fuera del cuerpo </item>
+        <item>hasta 10 metros de distancia. </item>
+        <item>Es imposible estornudar con los ojos abiertos. </item>
+        <item>No te puedes matar conteniendo el aliento por ti mismo. </item>
+        <item>Es mas probable que una persona muera por un golpe de un corcho de Champagne que por una picadura de una arana venenosa. </item>
+        <item>Los diestros viven en promedio 9 años mas que los zurdos. </item>
+        <item>En el antiguo Egipto, los sacerdotes se arrancaban cada cabello y vello de su cuerpo, incluyendo cejas y pestañas. </item>
+        <item>Un cocodrilo no puede sacar la lengua. </item>
+        <item>El 90\% de los encuestados por Glyniss® opinan que debería buscarle inmediatamente, perder el miedo y tratar de arreglar las cosas.</item>
+        <item>El tiempo de espera medio hasta que nos dormimos es de siete minutos. </item>
+        <item>Los CDs fueron diseñados para recibir 74 minutos de música porque esa es la duración de la Novena Sinfonía de Bethoven. </item>
+        <item>Antes del 1800, los zapatos para el pie izquierdo y derecho eran iguales. </item>
+        <item>El encendedor se inventó antes que los fósforos. </item>
+        <item>Walt Disney tenía miedo a los ratones. </item>
+        <item>A lo largo de nuestra vida, y durante las noches, cada humano se come o respira una media de 8 pequeños insectos. </item>
+        <item>Los cómics del pato Donald se prohibieron en Finlandia porque no llevaba pantalones. </item>
+        <item>Las mujeres pestañean casi dos veces más que los hombres. </item>
+        <item>En China hay más angloparlantes que en los Estados Unidos. ¿Sabías que compartes tu fecha de cumpleaños con al menos otros 9 millones de personas en el mundo? </item>
+        <item>Leonardo Da Vinci inventó las tijeras. </item>
+        <item>Solo una de cada dos mil millones de personas alcanza o sobrepasa los 116 años de edad. </item>
+        <item>El cacahuete es uno de los ingredientes de la dinamita. </item>
+        <item>Como media, la mano izquierda realiza el 56\% del trabajo cuando se escribe a máquina. </item>
+        <item>En el mundo hay más pollos que personas. </item>
+        <item>Los repelentes de mosquitos no repelen. Te ocultan. El spray bloquea los censores del mosquito por lo tanto ellos no saben que estas ahí. </item>
+        <item>Ningún pedazo de papel puede ser plegado a la mitad más de 7 veces. </item>
+        <item>Los burros matan más gente anualmente que los accidentes aéreos. </item>
+        <item>Quemas más calorías durmiendo que mirando televisión. </item>
+        <item>El roble no produce bellotas hasta que tiene 50 años o más. </item>
+        <item>El rey de corazones es el único rey sin bigotes. </item>
+        <item>La distancia de alas del Boeing 747 Jumbo es más larga que el vuelo del primer avión de los hermanos Wright. </item>
+        <item>Es posible hacer subir una vaca por las escaleras, pero no bajarla. </item>
+        <item>En promedio, 100 personas mueren ahogados al año con bolígrafos. </item>
+        <item>Es físicamente imposible lamerse el propio codo. </item>
+        <item>La guerra más corta de la historia tuvo lugar entre Zanzibar e Inglaterra en 1896. Zanzíbar se rindió a los 38 minutos. </item>
+        <item>La silla eléctrica fue inventada por un dentista. </item>
+        <item>Febrero de 1865 es el único mes en los registros históricos que no tuvo ninguna luna llena. </item>
+        <item>La orina de gato brilla a la luz de una lámpara de luz negra. </item>
+        <item>Si gritas durante ocho años, siete meses y seis días, habrás producido suficiente energía sonora como para calentar una taza de café. </item>
+        <item>Si te tirases pedos consistentemente durante seis años y nueve meses, producirías suficiente gas como para crear la energía de una bomba atómica. </item>
+        <item>Una libélula vive aproximadamente 24 horas. </item>
+        <item>La memoria de un pez dorado es de tres segundos. </item>
+        <item>En Inglaterra, al Presidente de la Cámara no se le permite hablar. </item>
+        <item>El nombre de Oz, usado en \”El mago de Oz\” se le ocurrió a su autor Frank Baum cuando en su despacho contempló el segundo tomo de su enciclopedia, A-N y O-Z. </item>
+        <item>Una pelota de golf oficial tiene 336 agujeritos. </item>
+        <item>La manera mas fácil de diferenciar un animal carnívoro de un herbívoro es por sus ojos. Los carnívoros (perros, leones) los tienen al frente de la cabeza, lo que les facilita localizar su alimento. Los herbívoros los tienen a los lados de la misma (aves, conejos), lo que les ayuda a detectar la aproximación de un posible depredador. </item>
+        <item>Una persona parpadea aproximadamente 25 mil veces por semana. </item>
+        <item>El material más resistente creado por la naturaleza es la tela de Araña. </item>
+        <item>15\% de las mujeres americanas se mandan flores a si mismas en el día de los enamorados. </item>
+        <item>La hija de Shakespeare era analfabeta. </item>
+        <item>Einstein nunca fue un buen alumno, y ni siquiera hablaba bien a los 9 años, sus padres creían que era retrasado mental. </item>
+        <item>El Nombre completo de pato Donald es: Donald Fauntleroy Duck </item>
+        <item>En 1987, las líneas aéreas gringas se ahorraron 40,000 $ con sólo eliminar una aceituna de cada ensalada. </item>
+        <item>Una jirafa se puede limpiar sus propias orejas con la lengua. </item>
+        <item>Millones de árboles son plantados accidentalmente por ardillas que entierran sus nueces y no recuerdan dónde las escondieron. </item>
+        <item>Comerse una manzana es más eficaz que tomarse un café para mantenerse despierto. </item>
+        <item>Las hormigas se desperezan por la mañana cuando se despiertan. </item>
+        <item>Los cepillos de dientes de color azul son más usados que los de color rojo. </item>
+        <item>El órgano del hombre que puede crecer 20 veces su tamaño original es la retina </item>
+        <item>Las ballenas duermen la mitad de su cerebro para no undirse. </item>
+        <item>Sólo hay un alimento que no se deteriora: La miel </item>
+        <item>Los delfines duermen con un ojo abierto. </item>
+        <item>Un tercio de todo el helado vendido en el mundo, es de vainilla. </item>
+        <item>Las uñas de las manos crecen aproximadamente cuatro veces más que las del pie. </item>
+        <item>El ojo de un avestruz es mayor que su cerebro. </item>
+        <item>Los diestros viven, en promedio, nueve años más que los zurdos. </item>
+        <item>El \”cuac\” de un pato, no produce eco. Y nadie sabe porqué. </item>
+        <item>El músculo más potente del cuerpo humano es la lengua. </item>
+        <item>Es imposible estornudar con los ojos abiertos. </item>
+        <item>La \”jota\” es la única letra que no aparece en la tabla periódica de los elementos micos. </item>
+        <item>Una sóla gota de aceite de motor hace que 25 litros de agua dejen de ser apropiados para el consumo humano. </item>
+        <item>Los chimpancés y los delfines son los únicos animales, junto con el hombre, capaces de reconocerse frente al espejo. </item>
+        <item>Reír durante el día, hace que se duerma mejor por la noche. </item>
+        <item>Cuando mueres a tu cerebro le quedan 7 minutos de vida en lo que mueren todas sus celulas…en esos 7 minutos puedes experimentar alucinaciones que van desde \”llegar al cielo\”, \”volver a nacer\” o \”tener un dejavu completo de ese dia\”, aunque algunos cientificos dicen que inclusive podemos \”revivir\” toda nuestra vida, esto por como ya dije un proceso que libera y muere todo lo que hay dentro de nuestro cerebro…que tal si estamos en esos 7 minutos?</item>
+
+    </string-array>
+
+
+
+
+
+</resources>

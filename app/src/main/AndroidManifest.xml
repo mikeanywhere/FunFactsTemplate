@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mike.funfactsTemplateRebuild" >
+    package="com.mike.funfactsTemplateRebuild"
+    android:versionCode="2"
+    android:versionName="1.1"    >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.mike.funfactsTemplateRebuild.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.mike.funfactsTemplateRebuild.permission.C2D_MESSAGE" />
 
     <application
         android:name="com.mike.funfactsTemplateRebuild.FunFactsApplication"
@@ -13,11 +25,13 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@drawable/ic_launcher" />
+
         <activity
             android:name="com.mike.funfactsTemplateRebuild.FunFactsActivity"
-            android:configChanges="orientation"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,9 +57,7 @@
             android:keepScreenOn="true" />
         <activity
             android:name="com.mike.funfactsTemplateRebuild.ContactMe"
-            android:configChanges="orientation"
-            android:label="@string/title_activity_contact_me"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_contact_me">
             <intent-filter>
                 <action android:name="android.intent.action.SENDTO" />
 
@@ -56,38 +68,64 @@
         </activity>
         <activity
             android:name="com.mike.funfactsTemplateRebuild.AboutMe"
-            android:configChanges="orientation"
-            android:label="@string/title_activity_about_me"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_about_me">
         </activity>
+
         <activity
             android:name="com.mike.funfactsTemplateRebuild.SubmitFact"
-            android:configChanges="orientation"
-            android:label="@string/title_activity_submit_fact"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_submit_fact" >
         </activity>
         <activity
             android:name="com.mike.funfactsTemplateRebuild.FavoriteFactsList"
-            android:configChanges="orientation"
-            android:label="@string/title_activity_favorite_facts"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_favorite_facts" >
         </activity>
         <activity
             android:name="com.mike.funfactsTemplateRebuild.FavoriteFactDetail"
-            android:configChanges="orientation"
-            android:label="@string/title_activity_favorite_fact_detail"
-            android:screenOrientation="portrait" >
+            android:label="@string/title_activity_favorite_fact_detail">
         </activity>
-        <activity
-            android:name="com.mike.funfactsTemplateRebuild.FavoriteFactDetailSwipe"
-            android:configChanges="orientation"
-            android:label="@string/title_activity_favorite_fact_detail"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.mike.funfactsTemplateRebuild.FavoriteFactListSwipe"
-            android:label="@string/title_activity_favorite_fact_list_swipe" >
-        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!-- <receiver android:name="com.parse.ParsePushBroadcastReceiver" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.parse.push.intent.RECEIVE" /> -->
+        <!-- <action android:name="com.parse.push.intent.DELETE" /> -->
+        <!-- <action android:name="com.parse.push.intent.OPEN" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+<!--                   IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="com.mike.funfactsTemplateRebuild" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.mike.funfactsTemplateRebuild.pushReciever"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+
+                <category android:name="com.mike.funfactsTemplateRebuild" />
+            </intent-filter>
+        </receiver>
+
+
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
     </application>
 
 </manifest>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Réalités amusants</string>
+    <string name="hashtag">#Réalités@Ack</string>
+    <string name="hashtag_append">\n\n#Réalités@Ack</string>
+    <string name="hello_world">Bonjour le monde!</string>
+    <string name="action_submit">Proposez un fait</string>
+    <string name="action_about">sur moi</string>
+    <string name="action_contact">Contactez-moi </string>
+    <string name="action_facts">Retour aux réalités</string>
+    <string name="action_favorites">Mes favoris</string>
+    <string name="action_settings">paramètres</string>
+    <string name="title_activity_contact_me">Contactez-moi</string>
+    <string name="title_activity_about_me">sur moi</string>
+    <string name="title_activity_submit_fact">Soumettre un Fact</string>
+    <string name="title_activity_favorite_facts">Réalités préférées</string>
+    <string name="title_activity_favorite_fact_detail">FavoriteFactDetail</string>
+    <string name="title_contact_me">Contactez-moi</string>
+    <string name="content_about_me">Mon nom est Michael Lewis, je suis né à Londres, en Angleterre,et ont été écrit applications pour quelques mois maintenant. Comme mes compétences se développent,donc seront les applications que je écrire. En attendant, je espère que vous pouvez aider, à la fois avec mon développement etavec le développement de ces applications. Enfin, je voudrais dédier cette applicationà mon frère, sans qui, rien de tout cela ne serait arrivé. \n\nTous les meilleurs, Mike</string>
+    <string name="content_contact_me">Salut! Glad vous entrer en contact! En tant que développeur assez frais, je suis toujours à la recherche de commentaires de mes utilisateurs. Je ne suis pas une grande entreprise avec un budget de recherche énorme, donc les commentaires que vous avez sont les bienvenus. Ne hésitez pas à me envoyer un email en cliquant sur l\’enveloppe below.\nAll le meilleur, \nMike.</string>
+    <string name="content_submit_fact">Soyez une partie de quelque chose de grand. Proposez vos réalités ici. Je serai toujours créditer d\’observations dans l\’application, ce qui signifie votre nom (ou pseudo) seront vus et appréciés par des milliers. Comme un bonus supplémentaire, Si votre fait est sélectionné pour aller dans l\’application, vous recevrez la version sans publicité GRATUIT !!! Faisons du monde un endroit plus intéressant, éclairé :).</string>
+    <string name="edittext_hint_email">Entrez votre e-mail (facultatif)</string>
+    <string name="edittext_hint_name">Entrez votre nom (facultatif)</string>
+    <string name="edittext_hint_submitfact">Entrez votre fait ici!</string>
+    <string name="toggle_text_favorite_off">Favorite?</string>
+    <string name="toggle_text_favorite_on">Favorite!!!</string>
+    <string name="alert_title_thanks">Merci!</string>
+    <string name="alert_title_oops">Oops!</string>
+    <string name="alert_error_content_submit_empty_">Se il vous plaît soumettre un fait!</string>
+    <string name="alert_content_submit_thanks">Merci! votre fait a été soumis! Une fois / Si elle est approuvée,Je vais vous envoyer un email pour confirmer votre statut sans publicité!</string>
+    <string name="alert_error_content_submit_vulgar_">Se il vous plaît garder la langue appropriée</string>
+    <string name="alert_title_pollfish_1">BOOM!!!</string>
+    <string name="alert_content_pollfish_1">Vous cloué cette enquête comme un champion! %1$d plus enquêtes et vous allez annonce gratuite , camarade continuer à Réalités@Acking!!!</string>
+    <string name="alert_positive_pollfish_1">Joli!</string>
+    <string name="alert_title_pollfish_interim">LEGENDARY!</string>
+    <string name="alert_content_pollfish_interim">Vous êtes un maître de réponse!!!! %1$d autres enquêtes et vous pouvez vous débarrasser des annonces! continuer à Réalités@Acking!!!!!!</string>
+    <string name="alert_positive_pollfish_interim">doux!!!</string>
+    <string name="alert_positive_pollfish_final">les perdre</string>
+    <string name="alert_negative_pollfish_final">les garder!</string>
+    <string name="alert_title_pollfish_final">POW!!!</string>
+    <string name="alert_content_pollfish_final">Vous avez juste allé annonce gratuite , magnifique personne! Voulez-vous vous débarrasser des enquêtes, aussi?</string>
+    <string name="alert_positive_pollfish_pre">Doux!</string>
+    <string name="alert_title_pollfish_pre">Hey, Vous!</string>
+    <string name="alert_content_pollfish_pre">Hé tigre, répondre à cinq de ces enquêtes incroyablement court et vous pouvez vous débarrasser des annonces!</string>
+    <string name="button_text_submit">soumettre</string>
+    <string name="email_address_me">Mikeanywhere@me.com</string>
+    <string name="popup_menu_item_share">Partager!</string>
+    <string name="popup_menu_item_remove_favorite">Retirer des favoris</string>
+    <string name="button_share">Partager!</string>
+    <string name="button_next_fact">Suivant Fun Fact</string>
+    <string name="button_previous_fact">anterior</string>
+    <string name="title_main_did_you_know">Saviez-vous?</string>
+    <string name="title_favorite_number">faits préférés… </string>
+    <string name="text_main_fact_primer">Appuyez sur le bouton pour commencer!</string>
+    <string name="text_main_fact_error_all_favorited">Vous avez favoris avec tous les faits! Mises à jour à venir… en attendant, se il vous plaît ajouter plus via l\'option \' présenter un fait »dans le menu!</string>
+    <string name="button_favorites_back_to_facts">Retour à principaux faits</string>
+    <string name="text_swipe_instruction">Faites glisser votre doigt vers la droite pour supprimer des favoris!</string>
+    <string name="DEF_VAL">Vous avez pas encore de favoris!</string>
+
+
+
+    <array name="list_base_facts_from_resource_file">
+        <item>Le sperme pourrait avoir des propriétés d\’antidépresseur chez la femme.</item>
+        <item>popathodiaphulatophobie est la peur d\’être constipé.</item>
+        <item> Indonésie, la masturbation est punie par la décapitation.</item>
+        <item> chapitre 14, Section 1211 du Code Pénal Américain rend illégal pour les citoyens américains d\’avoir tout contact avec des extraterrestres.</item>
+        <item>e fourmi peut traîner jusqu\’à 60 fois son propre poids.</item>
+        <item>es Américains ne savent pas que le soleil est une étoile.</item>
+        <item>e personne passe en moyenne 6 mois de sa vie assis devant un feu rouge.</item>
+        <item> pandiculation est le mot qui signifie s\’étirer pour se réveiller.</item>
+        <item> Ketchup a été vendu dans les années 1830 en tant que médicament.</item>
+        <item> nombre de requêtes sur Google (uniquement aux USA) est environ de 1120 par seconde et de 3 milliard par mois.</item>
+        <item>aque année, 11.000 Américains se blessent en essayant des positions sexuelles bizarres.</item>
+        <item>eud avait la phobie des fougères.</item>
+        <item>es revenus du gouvernement russe vient de la vente de vodka.</item>
+        <item>haque rapport sexuel, la baleine éjacule environ 1800 litres de sperme</item>
+        <item>s éléphants sont les seuls mammifères à posséder 4 genoux.</item>
+        <item> majeure partie du temps, le mâle de la mante religieuse ne peut pas s\’accoupler pendant que sa tête est attachée à son corps. La femelle initie le sexe en arrachant la tête du mâle.</item>
+        <item>ns le Maryland, une loi interdit de maltraiter les huîtres.</item>
+        <item> est estimé qu\’à chaque instant, environ 0.7\% de la population mondiale est saoule.</item>
+        <item>nger une pomme est plus efficace qu\’un café pour rester éveillé.</item>
+        <item>mpereur Shah Khan Jahan fut enterré avec une main à l\’exterieur de sa tombe pour que ses visiteurs puissent la lui serrer.</item>
+        <item>es ours polaires femelles ont aussi un pénis.</item>
+        <item>ngkong, une femme peut tuer son mari adultère, la loi l\’y autorise, mais elle peut le faire seulement à mains nues.</item>
+        <item>s raisins explosent quand vous les mettez au four à micro-ondes.</item>
+        <item>squ\’en 1929, il y avait de la cocaïne dans le Coca cola.</item>
+        <item> vol le plus long d\’une poule est de 30 secondes.</item>
+        <item> y a une ville nommée Rome sur chaque continent.</item>
+        <item>uché sur le dos et en élevant doucement les jambes, vous ne pouvez pas vous enfoncer dans des sables mouvants.</item>
+        <item>e girafe adulte peut d\’une ruade briser le crâne ou les côtes d\’un lion.</item>
+        <item>us avez plus de chance d\’être frappé par la foudre que de gagner au loto.</item>
+        <item>s relations sexuelles brûlent 360 calories par heure.</item>
+        <item> moyenne 650 parisiens par an sont hospitalisés car ils ont glissé sur une crotte de chien.</item>
+        <item> cours d\’une journée notre main entre en contact indirect avec 15 pénis.</item>
+        <item>ns la Rome antique, quand un homme témoignait en cour de justice, il jurait sur ses testicules.</item>
+        <item>ersonnes par an meurent en testant une pile de 9V sur leur langue.</item>
+        <item> pètant continuellement pendant 6 ans et 9 mois, vous produirez assez de gaz pour créer l\’énergie d\’une bombe atomique.</item>
+        <item> Vatican a enregistré 0 naissances en 1983.</item>
+        <item>ns une ville du Wisconsin, une loi dispose qu\’un homme ne doit jamais tirer un coup de feu en l\’air lorsque sa femme a un orgasme.</item>
+        <item>tler et le général Franco n\’avaient qu\’un seul testicule. (perdu pendant une bataille).</item>
+        <item>us marcherez au cours de votre vie l\’équivalent de 3 fois le tour du monde.</item>
+        <item>s filles ouvrent la bouche quand elles se mettent du mascara pour stopper les battements de leurs cils.</item>
+        <item> 1937 à Detroit, un bébé tomba du 4eme étage sur un dénommé Joseph Figlock. Les deux survécurent. 1 ans plus tard, le même bébé retomba sur la même personne, les 2 survécurent encore.</item>
+        <item>près la World Toilet Organisation, nous passons en moyenne 3 ans de notre vie aux toilettes.</item>
+        <item> hauteur de la tour Eiffel peut varier de 15 cm selon la température.</item>
+        <item> moyenne l\’homme va manger environ 50 kilos de poussière dans sa vie.</item>
+        <item>ravers le monde, 23\% des problèmes de photocopieurs sont causés par des gens qui s\’assoient dessus pour se photocopier les fesses.</item>
+        <item> vous mangez un chewing-gum en épluchant des oignons, cela vous empêchera de pleurer.</item>
+        <item>us ne pouvez pas vous tuer en retenant votre souffle.</item>
+        <item> panophobie est la peur de tout.</item>
+        <item>e loi dans le Massachusetts interdit d\’avoir un gorille sur le siège arrière de sa voiture.</item>
+        <item> plus grand nombre d\’enfants nés d\’une seule femme étaient de 69, c\’était une paysanne russe, Valentina Vassilyev.</item>
+        <item>rs de la réhabilitation de fort Boyard pour la TV, 700 mètres cube de saletés ont été évacuées.</item>
+        <item>iver de 1911 était tellement froid que les chutes du Niagara étaient complètement gelées.</item>
+        <item>s de la hanche est plus solide que le ciment</item>
+        <item>us avez environ une \”chance\” sur 20 000 d\’etre assassiné.</item>
+        <item>e girafe peut lécher ses propres oreilles.</item>
+        <item>s dessins animés de Donald Duck ont été interdits en Finlande, car il ne portait pas de pantalon.</item>
+        <item> seul membre du groupe des ZZ Top sans barbe s\’appelle Beard (barbe en anglais).</item>
+        <item> y a assez de fer dans un être humain pour faire un petit clou.</item>
+        <item>ns le Kentucky, une personne est considérée comme sobre tant qu\’elle n\’est pas à terre.</item>
+        <item>us les citoyens du Kentucky sont obligés par la loi à prendre au moins un bain par an.</item>
+        <item> 1977, un jeune de 13 ans a remarqué qu\’une dent poussait sur son pied gauche.</item>
+        <item>s chutes des balcons sont la première cause de mortalité des chats domestiques.</item>
+        <item> moyenne, chaque année 100 personnes s\’étouffent avec un stylo.</item>
+        <item> colle sur les enveloppes Israélienne est certifiée Kasher.</item>
+        <item> seul aliment qui ne pourrit pas est le miel.</item>
+        <item>and Popeye a vu le jour en 1931, la consommation d\’épinards a augmenté de 33\% aux Etats Unis.</item>
+        <item>tre pied a exactement la même longueur que votre avant bras, du coude au poignet.</item>
+        <item>rgasme du cochon dure en moyenne environ 30 minutes.</item>
+        <item> Myspace était un pays, il serait le 8eme le plus peuplé du monde.</item>
+        <item>près la loi en Floride, on ne peut pas faire l\’amour à un porc-épic.</item>
+        <item> café et le tabac sont plus dangereux à long terme pour le corps humain que la résine de cannabis.</item>
+        <item> poisson clown a la capacité de changer de sexe.</item>
+        <item>us de personnes sont tuées par des ânes chaque année que dans des crash aériens.</item>
+        <item>s derniers mots d\’Albert Einstein furent en Allemand, mais l\’infirmière qui était a son chevet ne comprenait pas cette langue. Nous ne les connaitrons donc jamais.</item>
+        <item> coeur de l\’homme produit assez de pression pour ejecter le sang à plus de 10 mètres.</item>
+        <item>s mois qui commencent un dimanche ont un vendredi 13.</item>
+        <item> faut l\’interaction de 72 muscles différents à un humain pour parler.</item>
+        <item>s tigres ont également la peau rayée, pas seulement la fourrure.</item>
+        <item>urs polaire a la peau toute noire sous sa fourrure blanche.</item>
+        <item>e des guerres les plus courtes de l\’histoire opposa l\’Angleterre a Zanzibar en 1896. Zanzibar se rendit au bout de 2 jours.</item>
+        <item> faudrait qu\’1.2 millions de moustiques nous piquent simultanément pour nous vider de notre sang. (6 litres de sang dans le corps humain divisé par 4mm cubes de sang prélevé par piqure)</item>
+        <item>e fourmi en état d\’ébriété tombe toujours sur son côté droit.</item>
+        <item> cours des 3500 dernières années , il y a eu environ 230 ans de paix dans l\’ensemble du monde civilisé.</item>
+        <item> considère qu\’un livre a bien été corrigé lorsqu\’il contient moins de sept fautes.</item>
+        <item>s reins filtrent environ 1800 litres de sang par jour.</item>
+        <item> Allemagne, un oreiller est considéré comme une \”arme passive\”.</item>
+        <item> n\’y a pas d\’horloges dans les casinos à Las Vegas.</item>
+        <item>st Walt Disney lui-même qui donna sa voix originale au personnage de Mickey Mouse.</item>
+        <item>erican Airlines a économisé 40,000 $ en 1987 en supprimant une olive de chaque salade servi en première classe.</item>
+        <item>ns la plupart des pubs, les aiguilles des montres affichent 10h10 car c\’est plus esthétique.</item>
+        <item> y a plus d\’argent dépensé chaque année dans l\’alcool et les cigarettes que dans l\’assurance-vie.</item>
+        <item> cerveau humain est insensible à la douleur.</item>
+        <item>toma (Kansas), il est illégal de lancer un couteau sur les personnes portant un tee-shirt à rayures.</item>
+        <item>l Blanc (la voix de Bugs Bunny) est allergique aux carottes</item>
+        <item>s humains, les singes (plus particulièrement le bonobo) et les dauphins sont les seules espèces qui ont des rapports sexuels pour le plaisir.</item>
+        <item>omme le plus petit du monde est chinois et mesure 73cm. Son nom : He Pingping.</item>
+        <item>s lions peuvent s\’accoupler jusqu\’a 50 fois par jour.</item>
+        <item>e pieuvre possède 3 coeurs.</item>
+        <item> y a 1 million de fourmis pour chaque personne dans le monde. </item>
+        <item>ns l\’espace on ne peut pas roter mais on peut faire des pets.</item>
+        <item> y a plus de cochons que d\’humains au Danemark. (environ 24 millions de porcs en 2004 contre un peu plus de 5 millions d\’habitants)</item>
+        <item>s blattes peuvent vivre entre 7 et 9 jours sans leur tête.</item>
+        <item> faudrait a un homme plus de 30 ans pour pouvoir compter jusqu\’à 1 milliard.</item>
+        <item> vitesse moyenne, d\’un escargot adulte est d\’un millimètre par seconde, soit six centimètres par minute.</item>
+        <item> être humain ne peut pas éternuer les yeux ouverts.</item>
+        <item> plus jeune maman du monde s\’appelle Lina Medina. Elle a accouché par césarienne en 1939 d\’un petit Gerardo alors qu\’elle n\’avait que 5 ans et demi.</item>
+        <item> céleri est si peu calorique qu\’il va vous couter plus de calories en faisant l\’effort d\’en manger que ce qu\’il va vous rapporter.</item>
+        <item>rès-midi est un des rares mots de la langue française qui est à la fois masculin et féminin.</item>
+        <item>s vaches peuvent monter un escalier mais pas le descendre.</item>
+        <item> 1972, une hotesse de l\’air du nom de Vesna Vulovic a survécu a une chute de 10160 mètres.</item>
+        <item> Islande, les moutons sont 3 fois plus nombreux que les habitants. (320 000 habitants contre environ un million de moutons)</item>
+        <item> chance de voir 3 chevreuils albinos en même temps est de 1 sur 79 billions, pourtant un homme dans le Wisconsin a pris une photo de 3 chevreuils albinos dans un bois.</item>
+        <item>ns le désert de Durango au Mexique, il existe un point nommé la \”zone de silence\” ou les ondes de radio et de télé sont impossibles a capter clairement.</item>
+        <item> 111,111,111 = 12,345,678,987,654,321</item>
+        <item>es profits de McDonald\’s proviennent de la vente des Happy Meals.</item>
+        <item>près la loi en Georgie, un poulet a interdiction de traverser la route.</item>
+        <item>uelette ,lette et quintette\” sont les seuls mots masculins de la langue francaise qui se termine par \”ette\”.</item>
+        <item>us dormons environ 1/3 de notre vie. (soit 202 300 heures ou un peu plus de 23 ans).</item>
+        <item>hemere est un insecte dont la vie est si brève que la nature l\’a doté d\’une bouche minuscule mais pas de tube digestif.</item>
+        <item>s rats se multiplient tellement vite qu\’\’en 18 mois, 2 rats peuvent avoir plus d\’1 million de descendants.</item>
+        <item> feu le plus long du monde (sur la durée) brula durant 437 ans dans une houillere chinoise de la province du Sichuan. Il consuma plus de 127 millions de tonnes de charbon, et fut eteint le 25 novembre 1997.</item>
+        <item>ur échapper à l\’emprise des mâchoires d\’un crocodile, poussez vos pouces dans ses yeux - il vous laissera partir immédiatement.</item>
+        <item>s bébés naissent sans rotules.</item>
+        <item> diametre du Soleil diminue d\’un metre à chaque heure.</item>
+        <item> colibri ne peut pas marcher, mais c\’est le seul oiseau à pouvoir voler en marche arriere.</item>
+        <item> cornichon est un fruit.</item>
+        <item> Chine a plus d\’anglophones que les États-Unis.</item>
+        <item>aque année, vous partagez votre anniversaire avec environ 18,6 millions de personnes. (chiffres Octobre 2009)</item>
+        <item> l\’on met une petite quantité d\’alcool sur un scorpion, il deviendra instantanément fou jusqu\’a se piquer lui-même et se donner la mort.</item>
+        <item>e goutte de pluie tombe en moyenne a 10 km/h.</item>
+        <item>us de 50\% des gens fantasment plus souvent sur l\’argent que sur le sexe.</item>
+        <item>ns les textes de loi en Indiana, les singes n\’ont pas le droit de fumer.</item>
+        <item>s premiers préservatifs ont été inventés 3 000 ans avant JC en Egypte. Ils étaient composés de boyaux de mouton ou de vessie de porc.</item>
+        <item> vous gardez un poisson rouge dans une chambre noire, il finit par tourner au blanc.</item>
+        <item> parachute a été inventé plus de 100 ans avant l\’avion.</item>
+        <item>s femmes clignent des yeux près de deux fois plus que les hommes.</item>
+        <item>s dauphins peuvent nager et dormir en même temps.</item>
+        <item>st l\’après-midi que l\’activité hormonale d\’une femme est à son maximum.</item>
+        <item>s rats et les girafes peuvent rester plus longtemps sans eau que les chameaux.</item>
+        <item>réatures sur 10 vivent dans l\’Océan.</item>
+        <item>e femelle furet meurt si elle est en chaleur et qu\’elle ne trouve pas de partenaire.</item>
+        <item> une vie une femme avalera en moyenne 3kg de Rouge à lèvres.</item>
+        <item> Californie, la loi stipule qu\’il est illégal de tirer sur quoi que ce soit depuis sa voiture, excepté une baleine.</item>
+        <item>es personnes utilisant Internet, l\’utilisent pour la pornographie.</item>
+        <item>ncien basketeur Michael Jordan est plus connu dans le monde que le pape.</item>
+        <item>près la loi en Californie, il est proscrit de monter un piège à souris sans permis de chasse.</item>
+        <item> Livre Guinness des Records détient le record d\’être le livre le plus souvent volés dans les bibliothèques publiques aux Etats Unis.</item>
+        <item>e bombe nucléaire est tombée accidentellement sur le désert du Nouveau Mexique en 1957, mais n\’a pas explosé.</item>
+        <item> cusuraphobie est la peur d\’avoir tort.</item>
+        <item>méricain Randy Gardner passa onze jours sans dormir dans le cadre d\’une experience sur le sommeil.</item>
+        <item>ouples fétaient leur lune de miel sur le Titanic lorsqu\’il a coulé.</item>
+        <item> y a plus de personnes tuées chaque année par des noix de coco qui tombent de l\’arbre que par des attaques de requins</item>
+        <item>ns l\’espace, les astronautes ne peuvent pas pleurer, car il n\’y a pas de gravité et les larmes ne peuvent pas couler.</item>
+        <item> son de démarrage de Windows 95 a été composé par Brian Eno, musicien et producteur du groupe U2. (composé d\’ailleurs sur un Macintosh)</item>
+        <item> 1982, Larry Walters attacha 45 ballons météo à sa chaise de jardin et grimpa à une altitude de 4800 metres.</item>
+        <item>ns l\’Utah, il est interdit de faire l\’amour en pleine lumière.</item>
+        <item> y a assez d\’eau dans les piscines Américaines pour couvrir l\’ensemble de la ville de San Francisco à 3 mètres de profondeur.</item>
+        <item>ns le vocabulaire québécois, les \”Gosses\” est le mot utilisé pour parler des testicules.</item>
+        <item>s grecs croyaient que les étoiles étaient des petits trous par lesquels les dieux regardaient les hommes.</item>
+        <item> Terre pèse environ 6 mille milliards de milliards de tonnes.</item>
+        <item> cerveau continue à envoyer des signaux électriques 37 heures après la mort.</item>
+        <item>in d\’éviter les vols, les ampoules électriques du métro de New-York se vissent a l\’envers.</item>
+        <item>shington, dans la ville d\’Auburn, déflorer une femme vierge est passible de 5 ans d\’incarcération.</item>
+        <item>us avez 100 fois plus de chances de recevoir un oeuf d\’autruche sur la tête que d\’être attaqué par un requin.</item>
+        <item>us partagez votre oreiller avec plus de 100 millions d\’acariens.</item>
+        <item> Joconde ne possède ni cils, ni sourcils.</item>
+        <item>ronto, la loi interdit de traîner un cheval mort sur Yonge Street le dimanche.</item>
+        <item>tre le Japon et la Russie, la 2eme guerre mondiale n\’est officiellement pas finie, ils n\’ont pas fait de traité de paix.</item>
+        <item>nus et Uranus sont les seules planètes du système solaire à tourner (sur elles-même) dans le sens des aiguilles d\’une montre (sens rétrograde).</item>
+        <item> coeur de girafe pèse 11 Kilos.</item>
+        <item> Brésil est le pays le plus frappé par des éclairs (environ 50 millions par an).</item>
+        <item> père du créateur des Simpsons, Matt Groening, s\’appelle Homer, sa mère Marjorie (\”Marge\”), et ses soeurs ont pour noms Lisa et Margaret (\”Maggie\”).</item>
+        <item>ul un adolescent sur 100 arrive à siffler correctement.</item>
+        <item> y a plus de poulets que d\’humains sur Terre.</item>
+        <item> moyenne on met 7 minutes à s\’endormir.</item>
+        <item>s pépins de pomme contiennent du cyanure.</item>
+        <item> mot \”assassin\” vient de l\’Arabe \”haschashin\” qui signifie \”les gens qui fument le haschisch ( de l\’herbe ou du cannabis)\”</item>
+        <item> cours de la Seconde Guerre mondiale, la première bombe lancée sur Berlin par les Alliés a tué le seul éléphant dans le zoo de Berlin.</item>
+        <item> y a plus de bactéries dans votre bouche que d\’humains dans le monde.</item>
+        <item> moyenne, 12 nouveau-nés sont donnés aux mauvais parents tous les jours.</item>
+        <item> langue d\’un caméléon fait deux fois la longueur de son corps.</item>
+        <item>elques heures après sa mort on pète encore.</item>
+        <item> France, il est interdit de s\’embrasser sur des rails.</item>
+        <item>tre pouce a la même longueur que votre nez.</item>
+        <item>s ours polaires sont gauchers.</item>
+        <item>ec un mouton on peut faire 14 pull over.</item>
+        <item> éternuant, on projette 20 000 minuscules gouttes de salive.</item>
+        <item> Central Park de New York est 2 fois plus grand que Monaco.</item>
+        <item> probabilité de mourir en tombant du lit est de 1 sur 2 millions.</item>
+        <item> fellation est condamnée dans plusieurs Etats Américains.</item>
+        <item> briquet a été inventé avant les allumettes.</item>
+        <item> coin-coin du canard n\’a pas d\’echo.</item>
+        <item>e méduse est composée à 97\% d\’eau!</item>
+        <item>ns le règlement de Facebook, il est stipulé qu\’on peut travailler en chaussettes.</item>
+        <item>es coiffeurs Américains ont déjà été poursuivis en justice pour avoir raté une coupe.</item>
+        <item>s 101 Dalmatiens, Peter Pan, la belle et le Clochard, La belle au bois dormant et Mulan sont les seuls dessins animés de Disney où les deux parents sont présents et ne meurent pas pendant le film.</item>
+        <item> peau d\’un humain pèse 2 fois plus que son cerveau.</item>
+        <item>s gens qui ont des yeux bleus voient mieux dans le noir.</item>
+        <item> Alabama, il est interdit de conduire les yeux bandés et de mettre du sel sur les voies ferrées sous risque de peine de mort.</item>
+        <item> vous dépliez et aplatissez un ensemble de poumons ils couvriraient un court de tennis</item>
+
+    </array>
+
+
+</resources>

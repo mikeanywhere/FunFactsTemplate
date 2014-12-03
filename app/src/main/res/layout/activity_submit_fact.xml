@@ -6,69 +6,86 @@
     android:background="#ff5c5356">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:background="#222222">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_activity_submit_fact"
-            android:id="@+id/detailFavFact"
+            android:id="@+id/Submit_Title"
             android:layout_gravity="center_horizontal"
             android:textSize="40sp"
             android:textColor="#ffffffff"
             />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/submitName"
             android:layout_marginTop="10dp"
             android:hint="@string/edittext_hint_name"
-            android:textColorHint="#ffaeaeae"/>
+            android:textColorHint="#ffaeaeae"
+            android:background="@drawable/top_edittext_bg"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
             android:inputType="textEmailAddress"
             android:ems="10"
             android:id="@+id/submitEmail"
-            android:layout_marginTop="10dp"
             android:hint="@string/edittext_hint_email"
-            android:textColorHint="#ffaeaeae" />
+            android:textColorHint="#ffaeaeae"
+            android:background="@drawable/bottom_eddittext_bg"
+            android:layout_gravity="center_horizontal" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="282dp"
+            android:layout_height="80sp"
             android:inputType="textMultiLine"
             android:ems="10"
             android:id="@+id/submitFact"
             android:hint="@string/edittext_hint_submitfact"
-            android:textColorHint="#ffaeaeae" />
+            android:textColorHint="#ffaeaeae"
+            android:background="@drawable/whole_edittext_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3sp"
+            android:gravity="top" />
 
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_text_submit"
             android:id="@+id/button"
             android:layout_gravity="center_horizontal"
-            android:background="#0fffffff" />
+            android:background="#ff487f2a"
+            android:layout_marginTop="3sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/content_submit_fact"
-            android:id="@+id/textView4"
-            android:gravity="center_horizontal"
-            android:textSize="25sp"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView3" >
 
-            android:textColor="#ffffffff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/content_submit_fact"
+                android:id="@+id/SubmitFactMain"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"
+
+                android:textColor="#ffffffff" />
+        </ScrollView>
+
     </LinearLayout>
 </RelativeLayout>
